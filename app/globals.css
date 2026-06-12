@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased transition-colors duration-200 dark:bg-night-950 dark:text-slate-100;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Signature "stadium ticket" treatment for match cards: a perforated
+     divider with notched edges, like a tear-off ticket stub. */
+  .ticket-divider {
+    position: relative;
+    border-top: 2px dashed theme("colors.slate.200");
+  }
+  .dark .ticket-divider {
+    border-top-color: theme("colors.night.800");
+  }
+  .ticket-divider::before,
+  .ticket-divider::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    width: 16px;
+    height: 16px;
+    border-radius: 9999px;
+    background: theme("colors.slate.50");
+  }
+  .dark .ticket-divider::before,
+  .dark .ticket-divider::after {
+    background: theme("colors.night.950");
+  }
+  .ticket-divider::before { left: -8px; }
+  .ticket-divider::after { right: -8px; }
+}

@@ -1,0 +1,10 @@
+[
+  {"id":"mex","name":"Mexico","shortName":"MEX","flag":"🇲🇽","group":"A","coach":null,"ranking":null,"previousWorldCupPerformance":"Quarter-finals (1970, 1986)","form":[]},
+  {"id":"can","name":"Canada","shortName":"CAN","flag":"🇨🇦","group":"B","coach":null,"ranking":null,"previousWorldCupPerformance":"Group stage (1986, 2022)","form":[]},
+  {"id":"usa","name":"United States","shortName":"USA","flag":"🇺🇸","group":"D","coach":null,"ranking":null,"previousWorldCupPerformance":"Semi-finals (1930)","form":[]},
+  {"id":"arg","name":"Argentina","shortName":"ARG","flag":"🇦🇷","group":null,"coach":null,"ranking":null,"previousWorldCupPerformance":"Champions (1978, 1986, 2022)","form":[]},
+  {"id":"bra","name":"Brazil","shortName":"BRA","flag":"🇧🇷","group":null,"coach":null,"ranking":null,"previousWorldCupPerformance":"Champions (1958, 1962, 1970, 1994, 2002)","form":[]},
+  {"id":"fra","name":"France","shortName":"FRA","flag":"🇫🇷","group":null,"coach":null,"ranking":null,"previousWorldCupPerformance":"Champions (1998, 2018)","form":[]},
+  {"id":"eng","name":"England","shortName":"ENG","flag":"🏴󠁧󠁢󠁥󠁮󠁧󠁿","group":null,"coach":null,"ranking":null,"previousWorldCupPerformance":"Champions (1966)","form":[]},
+  {"id":"jpn","name":"Japan","shortName":"JPN","flag":"🇯🇵","group":null,"coach":null,"ranking":null,"previousWorldCupPerformance":"Round of 16 (2002, 2010, 2018, 2022)","form":[]}
+]

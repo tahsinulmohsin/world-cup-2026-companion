@@ -1,0 +1,5 @@
+[
+  {"group":"A","teamId":"mex","team":"Mexico","played":0,"won":0,"drawn":0,"lost":0,"goalsFor":0,"goalsAgainst":0,"points":0,"form":[],"qualificationStatus":"in_contention"},
+  {"group":"B","teamId":"can","team":"Canada","played":0,"won":0,"drawn":0,"lost":0,"goalsFor":0,"goalsAgainst":0,"points":0,"form":[],"qualificationStatus":"in_contention"},
+  {"group":"D","teamId":"usa","team":"United States","played":0,"won":0,"drawn":0,"lost":0,"goalsFor":0,"goalsAgainst":0,"points":0,"form":[],"qualificationStatus":"in_contention"}
+]

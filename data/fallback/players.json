@@ -1,0 +1,6 @@
+[
+  {"id":"p-messi","teamId":"arg","name":"Lionel Messi","position":"Forward","shirtNumber":10,"club":"Inter Miami CF","age":null,"nationality":"Argentina","isKeyPlayer":true,"goals":null,"assists":null,"yellowCards":null,"redCards":null,"appearances":null,"bio":null},
+  {"id":"p-mbappe","teamId":"fra","name":"Kylian Mbappé","position":"Forward","shirtNumber":10,"club":"Real Madrid","age":null,"nationality":"France","isKeyPlayer":true,"goals":null,"assists":null,"yellowCards":null,"redCards":null,"appearances":null,"bio":null},
+  {"id":"p-pulisic","teamId":"usa","name":"Christian Pulisic","position":"Forward","shirtNumber":10,"club":"AC Milan","age":null,"nationality":"United States","isKeyPlayer":true,"goals":null,"assists":null,"yellowCards":null,"redCards":null,"appearances":null,"bio":null},
+  {"id":"p-davies","teamId":"can","name":"Alphonso Davies","position":"Defender","shirtNumber":19,"club":"Bayern Munich","age":null,"nationality":"Canada","isKeyPlayer":true,"goals":null,"assists":null,"yellowCards":null,"redCards":null,"appearances":null,"bio":null}
+]
