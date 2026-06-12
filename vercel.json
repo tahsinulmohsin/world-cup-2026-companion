@@ -1,10 +1,10 @@
 {
   "crons": [
-    { "path": "/api/cron/fixtures", "schedule": "*/15 * * * *" },
-    { "path": "/api/cron/standings", "schedule": "*/5 * * * *" },
-    { "path": "/api/cron/news", "schedule": "*/30 * * * *" },
-    { "path": "/api/cron/squads", "schedule": "0 */12 * * *" },
-    { "path": "/api/cron/broadcasters", "schedule": "0 3 * * *" },
-    { "path": "/api/cron/stadiums", "schedule": "30 3 * * *" }
+    { "path": "/api/cron/fixtures", "schedule": "0 4 * * *" },
+    { "path": "/api/cron/standings", "schedule": "10 4 * * *" },
+    { "path": "/api/cron/news", "schedule": "20 4 * * *" },
+    { "path": "/api/cron/squads", "schedule": "30 4 * * *" },
+    { "path": "/api/cron/broadcasters", "schedule": "40 4 * * *" },
+    { "path": "/api/cron/stadiums", "schedule": "50 4 * * *" }
   ]
 }
