@@ -43,7 +43,7 @@ function nowISO(): string {
   return new Date().toISOString();
 }
 
-function unavailableMeta(cfg: OfficialSourceConfig<unknown>): SourceMeta {
+function unavailableMeta<T>(cfg: OfficialSourceConfig<T>): SourceMeta {
   return {
     sourceName: cfg.name,
     sourceUrl: process.env[cfg.envUrlKey] ?? "",
@@ -54,7 +54,7 @@ function unavailableMeta(cfg: OfficialSourceConfig<unknown>): SourceMeta {
   };
 }
 
-function sampleMeta(cfg: OfficialSourceConfig<unknown>): SourceMeta {
+function sampleMeta<T>(cfg: OfficialSourceConfig<T>): SourceMeta {
   return {
     sourceName: "Bundled sample data (development fallback)",
     sourceUrl: "",

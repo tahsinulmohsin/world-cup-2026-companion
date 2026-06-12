@@ -16,7 +16,7 @@ export default async function TicketsPage() {
       </header>
 
       <div className="rounded-2xl border border-amber-300/60 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-700/50 dark:bg-amber-950/30 dark:text-amber-300">
-        ⚠️ Safety note: buy tickets only through FIFA's official ticketing and hospitality channels. Tickets from
+        ⚠️ Safety note: buy tickets only through FIFA&apos;s official ticketing and hospitality channels. Tickets from
         unofficial resellers may be invalid and are commonly used in scams.
       </div>
 

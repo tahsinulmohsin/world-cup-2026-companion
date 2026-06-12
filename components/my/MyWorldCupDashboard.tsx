@@ -114,7 +114,7 @@ export default function MyWorldCupDashboard({
       <section>
         <h2 className="mb-3 font-display text-lg font-bold">Reminders</h2>
         {reminders.length === 0 ? (
-          <p className="text-sm text-slate-500">No reminders yet — tap "Notify me" on any match card.</p>
+          <p className="text-sm text-slate-500">No reminders yet — tap &quot;Notify me&quot; on any match card.</p>
         ) : (
           <p className="text-sm">
             {reminders.length} reminder{reminders.length === 1 ? "" : "s"} set ·{" "}

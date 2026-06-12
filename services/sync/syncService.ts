@@ -10,6 +10,10 @@ import { officialTicketsSource } from "@/services/officialSources/officialTicket
 import { officialTravelSource } from "@/services/officialSources/officialTravelSource";
 import { officialWatchPartiesSource } from "@/services/officialSources/officialWatchPartiesSource";
 import { computeImportance } from "@/utils/importance";
+import {
+  computeStandingsFromFixtures,
+  deriveTeamsFromFixtures
+} from "@/services/normalizers/openfootball";
 import type {
   Broadcaster, Fixture, MatchCentreData, NewsItem, Player,
   SourceResult, Stadium, Standing, Team, TicketInfo, TravelGuide, WatchParty
@@ -51,11 +55,34 @@ export async function getFixture(id: string): Promise<Fixture | null> {
 }
 
 export async function getStandings(): Promise<SourceResult<Standing[]>> {
-  return fifaStandingsSource.fetchData();
+  const res = await fifaStandingsSource.fetchData();
+  // No dedicated standings feed configured → compute the tables from the
+  // configured fixtures source's published results (derivation, not invention).
+  if (res.meta.reliability !== "official") {
+    const fixturesRes = await fifaFixturesSource.fetchData();
+    if (fixturesRes.meta.reliability === "official" && fixturesRes.data) {
+      const data = computeStandingsFromFixtures(fixturesRes.data, fixturesRes.meta);
+      if (data.length > 0) {
+        return { ok: true, data, meta: { ...fixturesRes.meta, sourceName: data[0].sourceMeta.sourceName } };
+      }
+    }
+  }
+  return res;
 }
 
 export async function getTeams(): Promise<SourceResult<Team[]>> {
-  return fifaTeamsSource.fetchData();
+  const res = await fifaTeamsSource.fetchData();
+  // No dedicated teams feed configured → derive the team list from fixtures.
+  if (res.meta.reliability !== "official") {
+    const fixturesRes = await fifaFixturesSource.fetchData();
+    if (fixturesRes.meta.reliability === "official" && fixturesRes.data) {
+      const data = deriveTeamsFromFixtures(fixturesRes.data, fixturesRes.meta);
+      if (data.length > 0) {
+        return { ok: true, data, meta: { ...fixturesRes.meta, sourceName: data[0].sourceMeta.sourceName } };
+      }
+    }
+  }
+  return res;
 }
 
 export async function getTeam(id: string): Promise<Team | null> {

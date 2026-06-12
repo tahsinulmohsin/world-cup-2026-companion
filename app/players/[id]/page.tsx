@@ -62,7 +62,7 @@ export default async function PlayerProfilePage({ params }: { params: { id: stri
           <Stat label="Red" value={player.redCards} />
           <Stat label="Shirt" value={player.shirtNumber} />
         </div>
-        <p className="mt-2 text-[11px] text-slate-400">Stats show "—" until published by the official tournament statistics source.</p>
+        <p className="mt-2 text-[11px] text-slate-400">Stats show &quot;—&quot; until published by the official tournament statistics source.</p>
       </section>
     </div>
   );

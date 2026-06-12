@@ -39,3 +39,5 @@ next-env.d.ts
 # runtime cache (never commit fetched data)
 /data/cache/*
 !/data/cache/.gitkeep
+
+.vercel

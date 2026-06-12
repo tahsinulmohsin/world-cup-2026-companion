@@ -11,7 +11,7 @@ export default function OfflineIndicator() {
   if (online) return null;
   return (
     <div className="bg-amber-500/15 px-4 py-1.5 text-center text-xs font-medium text-amber-800 dark:text-amber-300">
-      You're offline — showing saved data{lastSync ? ` (last synced ${relativeTime(lastSync)})` : ""}.
+      You&apos;re offline — showing saved data{lastSync ? ` (last synced ${relativeTime(lastSync)})` : ""}.
     </div>
   );
 }
