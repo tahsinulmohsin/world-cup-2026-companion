@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.2.0
+- **Version:** v1.3.0
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -37,7 +37,7 @@ This is a **completely vibe coded project**.
 - 📈 Stats page: golden boot, assists, cards, team goals/defense + clear unavailable states
 - 📰 Official news summaries linking to original articles
 - 🧳 Travel & host-city guides with matchday checklist
-- 🎉 Watch party finder (official/authorized event sources)
+- 🎉 Watch party finder (official/authorized event sources + local localStorage watch parties)
 - 🖼 Printable digital wall chart
 - 📱 PWA: installable, offline shell, last-synced data, offline indicator
 - 🌐 i18n: English + বাংলা today; Spanish/French/Arabic structured for translation
@@ -171,7 +171,16 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.2.0** (git tag `v1.2.0`).
+Semantic versioning. Current release: **v1.3.0** (git tag `v1.3.0`).
+
+**v1.3.0** — UI Polish, Favicon & Local Watch Parties
+- Created a sleek SVG favicon (soccer ball on green circle)
+- Refined translucent dark navbar with backdrop-blur
+- Added global scrollbar hiding for a cleaner UI
+- Re-architected stats page to only display tournament-specific match and standings data
+- Fixed filter layout overlap issues on mobile
+- Implemented user-created local watch parties with localStorage persistence
+- Scraped Wikipedia to integrate official broadcasters for matches
 
 **v1.2.0** — Wikipedia integration & ESPN live matches
 - Integrated ESPN live scoreboard and summary endpoints for match centre live commentary
