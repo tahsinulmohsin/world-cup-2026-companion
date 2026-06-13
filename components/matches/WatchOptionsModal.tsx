@@ -6,7 +6,6 @@ import DataSourceBadge from "@/components/ui/DataSourceBadge";
 import LastUpdatedBadge from "@/components/ui/LastUpdatedBadge";
 import { useWatchCountry } from "@/hooks/usePreferences";
 import { useTranslation } from "@/hooks/useTranslation";
-import { WATCH_COUNTRIES } from "@/utils/constants";
 import type { Broadcaster, SourceMeta } from "@/types";
 
 interface ApiResponse {
@@ -60,8 +59,8 @@ export default function WatchOptionsModal({ open, onClose }: { open: boolean; on
           className="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm dark:border-slate-700 dark:bg-night-900"
         >
           <option value="">Select a country…</option>
-          {WATCH_COUNTRIES.map((c) => (
-            <option key={c.code} value={c.code}>{c.name}</option>
+          {resp?.data?.map((b) => (
+            <option key={b.countryCode} value={b.countryCode}>{b.countryName}</option>
           ))}
         </select>
       </label>

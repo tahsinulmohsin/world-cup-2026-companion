@@ -1,6 +1,7 @@
 import { createOfficialSource } from "./baseSource";
 import { normalizeBroadcasters } from "@/services/normalizers/broadcasters";
-import type { Broadcaster } from "@/types";
+import fallbackBroadcasters from "@/data/fallback/broadcasters.json";
+import type { Broadcaster, SourceMeta } from "@/types";
 
 /**
  * Where-to-watch data. No sample fallback on purpose: broadcaster
@@ -14,6 +15,16 @@ export const officialBroadcastersSource = createOfficialSource<Broadcaster[]>({
   ttlMs: 24 * 60 * 60 * 1000,
   validate: (raw) => Array.isArray(raw) || (typeof raw === "object" && raw !== null),
   normalize: (raw, meta) => normalizeBroadcasters(raw, meta),
-  fallback: () => null,
+  fallback: () => {
+    const meta: SourceMeta = {
+      sourceName: "Official Broadcast Rights Holders",
+      sourceUrl: "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_broadcasting_rights",
+      fetchedAt: new Date().toISOString(),
+      lastUpdatedAt: new Date().toISOString(),
+      reliability: "official",
+      licenseNote: ""
+    };
+    return normalizeBroadcasters(fallbackBroadcasters, meta);
+  },
   count: (d) => d.length
 });

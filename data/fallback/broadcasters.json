@@ -1,1 +1,1862 @@
-[]
+[
+  {
+    "countryCode": "AFG",
+    "countryName": "Afghanistan",
+    "tvChannels": [
+      "ATN"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ALB",
+    "countryName": "Albania",
+    "tvChannels": [
+      "TV Klan",
+      "SuperSport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ALG",
+    "countryName": "Algeria",
+    "tvChannels": [
+      "ENTV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "AND",
+    "countryName": "Andorra",
+    "tvChannels": [
+      "RTVE",
+      "M6",
+      "Mediapro/DAZN"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ANG",
+    "countryName": "Angola",
+    "tvChannels": [
+      "TPA",
+      "Z Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ARG",
+    "countryName": "Argentina",
+    "tvChannels": [
+      "Telefe",
+      "TV Pública",
+      "TyC Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ARM",
+    "countryName": "Armenia",
+    "tvChannels": [
+      "Fast Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ARU",
+    "countryName": "Aruba",
+    "tvChannels": [
+      "Telearuba"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "AUS",
+    "countryName": "Australia",
+    "tvChannels": [
+      "SBS"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "AUS",
+    "countryName": "Austria",
+    "tvChannels": [
+      "ORF",
+      "ServusTV",
+      "Magenta Sport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "AZE",
+    "countryName": "Azerbaijan",
+    "tvChannels": [
+      "İTV",
+      "CBC Sport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BAN",
+    "countryName": "Bangladesh",
+    "tvChannels": [
+      "BTV",
+      "Somoy TV",
+      "T Sports",
+      "Toffee",
+      "Bioscope+",
+      "iScreen",
+      "My Robi",
+      "My Airtel"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BAR",
+    "countryName": "Barbados",
+    "tvChannels": [
+      "Caribbean Broadcasting Corporation"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BEL",
+    "countryName": "Belarus",
+    "tvChannels": [
+      "Sport TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BEL",
+    "countryName": "Belgium",
+    "tvChannels": [
+      "VRT",
+      "RTBF"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BEN",
+    "countryName": "Benin",
+    "tvChannels": [
+      "Bénin TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BER",
+    "countryName": "Bermuda",
+    "tvChannels": [
+      "Bermuda Broadcasting"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BOL",
+    "countryName": "Bolivia",
+    "tvChannels": [
+      "Red Uno",
+      "Unitel",
+      "Entel",
+      "Tigo Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BOS",
+    "countryName": "Bosnia and Herzegovina",
+    "tvChannels": [
+      "RTVFBIH",
+      "Arena Sport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BRA",
+    "countryName": "Brazil",
+    "tvChannels": [
+      "Grupo Globo",
+      "CazéTV",
+      "SBT/N Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BRU",
+    "countryName": "Brunei",
+    "tvChannels": [
+      "RTB"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BUL",
+    "countryName": "Bulgaria",
+    "tvChannels": [
+      "BNT"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BUR",
+    "countryName": "Burkina Faso",
+    "tvChannels": [
+      "RTB"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "BUR",
+    "countryName": "Burundi",
+    "tvChannels": [
+      "RTNB"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CAM",
+    "countryName": "Cambodia",
+    "tvChannels": [
+      "Hang Meas"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CAM",
+    "countryName": "Cameroon",
+    "tvChannels": [
+      "CRTV",
+      "Canal 2"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CAN",
+    "countryName": "Canada",
+    "tvChannels": [
+      "Bell Media"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CAP",
+    "countryName": "Cape Verde",
+    "tvChannels": [
+      "RTC"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CAR",
+    "countryName": "Caribbean",
+    "tvChannels": [
+      "Rush Sports (English)",
+      "DSports (Spanish)"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CHI",
+    "countryName": "Chile",
+    "tvChannels": [
+      "Chilevisión"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CHA",
+    "countryName": "Chad",
+    "tvChannels": [
+      "Télé Tchad"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CHI",
+    "countryName": "China",
+    "tvChannels": [
+      "CMG",
+      "Migu",
+      "Xiaohongshu"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "COL",
+    "countryName": "Colombia",
+    "tvChannels": [
+      "Caracol",
+      "RCN",
+      "Win Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "COO",
+    "countryName": "Cook Islands",
+    "tvChannels": [
+      "Vaka TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "COS",
+    "countryName": "Costa Rica",
+    "tvChannels": [
+      "Teletica",
+      "Tigo Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CRO",
+    "countryName": "Croatia",
+    "tvChannels": [
+      "HRT"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CUB",
+    "countryName": "Cuba",
+    "tvChannels": [
+      "ICRT"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CUR",
+    "countryName": "Curaçao",
+    "tvChannels": [
+      "Nos Pais Television"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CYP",
+    "countryName": "Cyprus",
+    "tvChannels": [
+      "Sigma TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "CZE",
+    "countryName": "Czechia",
+    "tvChannels": [
+      "ČT",
+      "TV Nova"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "DEM",
+    "countryName": "Democratic Republic of Congo",
+    "tvChannels": [
+      "RTNC"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "DEN",
+    "countryName": "Denmark",
+    "tvChannels": [
+      "DR",
+      "TV2"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "DOM",
+    "countryName": "Dominican Republic",
+    "tvChannels": [
+      "CDN 37",
+      "Pio Deportes"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ECU",
+    "countryName": "Ecuador",
+    "tvChannels": [
+      "Teleamazonas"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "EL ",
+    "countryName": "El Salvador",
+    "tvChannels": [
+      "TCS",
+      "Tigo Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "EST",
+    "countryName": "Estonia",
+    "tvChannels": [
+      "TV3 Estonia",
+      "ERR"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ETH",
+    "countryName": "Ethiopia",
+    "tvChannels": [
+      "Hagerie TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "FAR",
+    "countryName": "Faroe Islands",
+    "tvChannels": [
+      "KvF"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "FIJ",
+    "countryName": "Fiji",
+    "tvChannels": [
+      "FBC"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "FIN",
+    "countryName": "Finland",
+    "tvChannels": [
+      "Yle",
+      "MTV3"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "FRA",
+    "countryName": "France (Metropolitan)",
+    "tvChannels": [
+      "M6",
+      "beIN Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "FRA",
+    "countryName": "France (Ultramarine)",
+    "tvChannels": [
+      "La 1ère",
+      "Antenne Réunion (Réunion)"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "GAB",
+    "countryName": "Gabon",
+    "tvChannels": [
+      "RTG"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "GAM",
+    "countryName": "Gambia",
+    "tvChannels": [
+      "GRTS"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "GEO",
+    "countryName": "Georgia",
+    "tvChannels": [
+      "Setanta Sports",
+      "Rustavi 2"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "GER",
+    "countryName": "Germany",
+    "tvChannels": [
+      "ARD",
+      "ZDF",
+      "Magenta Sport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "GHA",
+    "countryName": "Ghana",
+    "tvChannels": [
+      "GBC",
+      "Multimedia Group",
+      "UTV",
+      "GHOne",
+      "ChannelOne",
+      "Ignite Media",
+      "Media General",
+      "Max TV",
+      "Woezor",
+      "Sporty TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "GRE",
+    "countryName": "Greece",
+    "tvChannels": [
+      "ERT"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "GUA",
+    "countryName": "Guatemala",
+    "tvChannels": [
+      "Albavisión",
+      "Tigo Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "GUI",
+    "countryName": "Guinea",
+    "tvChannels": [
+      "RTG"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "GUY",
+    "countryName": "Guyana",
+    "tvChannels": [
+      "ENet"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "HAI",
+    "countryName": "Haiti",
+    "tvChannels": [
+      "TNH",
+      "Canal+"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "HON",
+    "countryName": "Honduras",
+    "tvChannels": [
+      "Televicentro",
+      "Tigo Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "HON",
+    "countryName": "Hong Kong",
+    "tvChannels": [
+      "PCCW"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "HUN",
+    "countryName": "Hungary",
+    "tvChannels": [
+      "MTVA"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ICE",
+    "countryName": "Iceland",
+    "tvChannels": [
+      "RÚV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "IND",
+    "countryName": "India",
+    "tvChannels": [
+      "Doordarshan",
+      "Unite8 Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "IND",
+    "countryName": "Indonesia",
+    "tvChannels": [
+      "TVRI",
+      "MAXStream",
+      "Fola Play"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "IRA",
+    "countryName": "Iran",
+    "tvChannels": [
+      "IRIB",
+      "Persiana Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "IRE",
+    "countryName": "Ireland",
+    "tvChannels": [
+      "RTÉ"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ISR",
+    "countryName": "Israel",
+    "tvChannels": [
+      "KAN",
+      "Charlton"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ITA",
+    "countryName": "Italy",
+    "tvChannels": [
+      "RAI",
+      "DAZN"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "IVO",
+    "countryName": "Ivory Coast",
+    "tvChannels": [
+      "RTI",
+      "NCI"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "JAM",
+    "countryName": "Jamaica",
+    "tvChannels": [
+      "TVJ"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "JAP",
+    "countryName": "Japan",
+    "tvChannels": [
+      "NHK",
+      "Nippon TV",
+      "Fuji TV",
+      "DAZN"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "KAZ",
+    "countryName": "Kazakhstan",
+    "tvChannels": [
+      "QAZTRK"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "KEN",
+    "countryName": "Kenya",
+    "tvChannels": [
+      "KBC",
+      "SportyTV",
+      "Azam TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "KOS",
+    "countryName": "Kosovo",
+    "tvChannels": [
+      "RTK",
+      "TV Vala",
+      "Arena Sport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "KYR",
+    "countryName": "Kyrgyzstan",
+    "tvChannels": [
+      "KTRK",
+      "Beeline"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "LAO",
+    "countryName": "Laos",
+    "tvChannels": [
+      "Unitel"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "LAT",
+    "countryName": "Latvia",
+    "tvChannels": [
+      "TV3 Latvia"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "LIE",
+    "countryName": "Liechtenstein",
+    "tvChannels": [
+      "SRG SSR"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "LIT",
+    "countryName": "Lithuania",
+    "tvChannels": [
+      "TV3 Lithuania"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "LUX",
+    "countryName": "Luxembourg",
+    "tvChannels": [
+      "RTBF",
+      "ARD",
+      "ZDF"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MAC",
+    "countryName": "Macau",
+    "tvChannels": [
+      "TDM"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MAD",
+    "countryName": "Madagascar",
+    "tvChannels": [
+      "TVM"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MAL",
+    "countryName": "Malawi",
+    "tvChannels": [
+      "Azam TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MAL",
+    "countryName": "Malaysia",
+    "tvChannels": [
+      "RTM",
+      "Unifi TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MAL",
+    "countryName": "Maldives",
+    "tvChannels": [
+      "PSM",
+      "Medianet"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MAL",
+    "countryName": "Mali",
+    "tvChannels": [
+      "ORTM"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MAL",
+    "countryName": "Malta",
+    "tvChannels": [
+      "Television Malta"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MAU",
+    "countryName": "Mauritius",
+    "tvChannels": [
+      "MBC"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MEN",
+    "countryName": "MENA",
+    "tvChannels": [
+      "beIN Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MEX",
+    "countryName": "Mexico",
+    "tvChannels": [
+      "TelevisaUnivision",
+      "TV Azteca"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MOL",
+    "countryName": "Moldova",
+    "tvChannels": [
+      "Jurnal TV",
+      "We Sport TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MON",
+    "countryName": "Mongolia",
+    "tvChannels": [
+      "EduTV",
+      "National Television",
+      "Suld TV",
+      "MNB",
+      "mobihome VOO"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MON",
+    "countryName": "Montenegro",
+    "tvChannels": [
+      "RTCG",
+      "Arena Sport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MOR",
+    "countryName": "Morocco",
+    "tvChannels": [
+      "SNRT"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MOZ",
+    "countryName": "Mozambique",
+    "tvChannels": [
+      "TVM",
+      "Miramar",
+      "Z Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "MYA",
+    "countryName": "Myanmar",
+    "tvChannels": [
+      "Mytel",
+      "Canal+"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "NAM",
+    "countryName": "Namibia",
+    "tvChannels": [
+      "NBC"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "NEP",
+    "countryName": "Nepal",
+    "tvChannels": [
+      "Himalaya Sports",
+      "Dgo"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "NET",
+    "countryName": "Netherlands",
+    "tvChannels": [
+      "NOS"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "NEW",
+    "countryName": "New Zealand",
+    "tvChannels": [
+      "TVNZ"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "NIC",
+    "countryName": "Nicaragua",
+    "tvChannels": [
+      "Grupo Ratensa",
+      "Tigo Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "NIG",
+    "countryName": "Nigeria",
+    "tvChannels": [
+      "SportyTV",
+      "StarTimes"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "NOR",
+    "countryName": "North Macedonia",
+    "tvChannels": [
+      "Arena Sport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "NOR",
+    "countryName": "Norway",
+    "tvChannels": [
+      "NRK",
+      "TV2"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "PAC",
+    "countryName": "Pacific Islands",
+    "tvChannels": [
+      "Digicel"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "PAK",
+    "countryName": "Pakistan",
+    "tvChannels": [
+      "PTV Sports",
+      "Tapmad"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "PAN",
+    "countryName": "Panama",
+    "tvChannels": [
+      "RPC/COS",
+      "TVN Media",
+      "Tigo Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "PAP",
+    "countryName": "Papua New Guinea",
+    "tvChannels": [
+      "Digicel"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "PAR",
+    "countryName": "Paraguay",
+    "tvChannels": [
+      "Trece",
+      "GEN TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "PER",
+    "countryName": "Peru",
+    "tvChannels": [
+      "América Televisión"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "PHI",
+    "countryName": "Philippines",
+    "tvChannels": [
+      "Aleph Arena (via YouTube)",
+      "TAP DMV",
+      "Cignal PPV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "POL",
+    "countryName": "Poland",
+    "tvChannels": [
+      "TVP"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "POR",
+    "countryName": "Portugal",
+    "tvChannels": [
+      "RTP",
+      "SIC",
+      "TVI",
+      "LiveModeTV",
+      "Sport TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "PUE",
+    "countryName": "Puerto Rico",
+    "tvChannels": [
+      "Telemundo",
+      "Fox Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ROM",
+    "countryName": "Romania",
+    "tvChannels": [
+      "Antena"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "RUS",
+    "countryName": "Russia",
+    "tvChannels": [
+      "Match TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "RWA",
+    "countryName": "Rwanda",
+    "tvChannels": [
+      "RBA",
+      "Azam TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SAI",
+    "countryName": "Saint Lucia",
+    "tvChannels": [
+      "Winners Sports TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SAN",
+    "countryName": "San Marino",
+    "tvChannels": [
+      "RAI",
+      "DAZN"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SEN",
+    "countryName": "Senegal",
+    "tvChannels": [
+      "RTS"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SER",
+    "countryName": "Serbia",
+    "tvChannels": [
+      "PTC",
+      "Arena Sport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SEY",
+    "countryName": "Seychelles",
+    "tvChannels": [
+      "SBC"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SIN",
+    "countryName": "Singapore",
+    "tvChannels": [
+      "Mediacorp"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SLO",
+    "countryName": "Slovakia",
+    "tvChannels": [
+      "STVR",
+      "TV JOJ"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SLO",
+    "countryName": "Slovenia",
+    "tvChannels": [
+      "RTV SLO",
+      "Arena Sport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SOL",
+    "countryName": "Solomon Islands",
+    "tvChannels": [
+      "TTV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SOU",
+    "countryName": "South Africa",
+    "tvChannels": [
+      "SABC",
+      "SportyTV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SOU",
+    "countryName": "South America",
+    "tvChannels": [
+      "DSports",
+      "Disney+"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SOU",
+    "countryName": "South Korea",
+    "tvChannels": [
+      "JTBC",
+      "KBS",
+      "NAVER Sports/CHZZK"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SPA",
+    "countryName": "Spain",
+    "tvChannels": [
+      "RTVE",
+      "Mediapro/DAZN"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SRI",
+    "countryName": "Sri Lanka",
+    "tvChannels": [
+      "MTV",
+      "PEOTV",
+      "Dialog TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SUB",
+    "countryName": "Sub-Saharan Africa",
+    "tvChannels": [
+      "New World TV",
+      "SuperSport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SUR",
+    "countryName": "Suriname",
+    "tvChannels": [
+      "STVS",
+      "ATV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SWE",
+    "countryName": "Sweden",
+    "tvChannels": [
+      "SVT",
+      "TV4"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "SWI",
+    "countryName": "Switzerland",
+    "tvChannels": [
+      "SRG SSR"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "TAI",
+    "countryName": "Taiwan",
+    "tvChannels": [
+      "ELTA",
+      "EBC",
+      "TTV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "TAJ",
+    "countryName": "Tajikistan",
+    "tvChannels": [
+      "Varzish TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "TAN",
+    "countryName": "Tanzania",
+    "tvChannels": [
+      "TBC",
+      "Azam TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "THA",
+    "countryName": "Thailand",
+    "tvChannels": [
+      "MONOMAX Sports"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "TIM",
+    "countryName": "Timor-Leste",
+    "tvChannels": [
+      "RTTL",
+      "ETO"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "TOG",
+    "countryName": "Togo",
+    "tvChannels": [
+      "TVT"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "TUR",
+    "countryName": "Turkey",
+    "tvChannels": [
+      "TRT"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "TUR",
+    "countryName": "Turkmenistan",
+    "tvChannels": [
+      "Turkmenistan Sport"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "UGA",
+    "countryName": "Uganda",
+    "tvChannels": [
+      "UBC",
+      "Azam TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "UKR",
+    "countryName": "Ukraine",
+    "tvChannels": [
+      "MEGOGO"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "UNI",
+    "countryName": "United Kingdom",
+    "tvChannels": [
+      "BBC",
+      "ITV/STV (Scotland)"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "UNI",
+    "countryName": "United States",
+    "tvChannels": [
+      "Fox Sports",
+      "Telemundo"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "URU",
+    "countryName": "Uruguay",
+    "tvChannels": [
+      "Canal 5",
+      "Antel TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "UZB",
+    "countryName": "Uzbekistan",
+    "tvChannels": [
+      "Zo'r TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "VAN",
+    "countryName": "Vanuatu",
+    "tvChannels": [
+      "VBTC"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "VEN",
+    "countryName": "Venezuela",
+    "tvChannels": [
+      "Televen"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "VIE",
+    "countryName": "Vietnam",
+    "tvChannels": [
+      "VTV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ZAM",
+    "countryName": "Zambia",
+    "tvChannels": [
+      "ZNBC",
+      "Azam TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  },
+  {
+    "countryCode": "ZIM",
+    "countryName": "Zimbabwe",
+    "tvChannels": [
+      "ZBC",
+      "Azam TV"
+    ],
+    "streamingPlatforms": [],
+    "notes": null,
+    "languageOptions": [],
+    "isFree": null
+  }
+]
