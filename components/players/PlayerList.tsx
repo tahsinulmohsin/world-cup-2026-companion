@@ -1,8 +1,8 @@
 import PlayerCard from "./PlayerCard";
 import EmptyState from "@/components/ui/EmptyState";
-import type { Player } from "@/types";
+import type { Player, Team } from "@/types";
 
-export default function PlayerList({ players, emptyMessage }: { players: Player[]; emptyMessage?: string }) {
+export default function PlayerList({ players, teams, emptyMessage }: { players: Player[]; teams?: Team[]; emptyMessage?: string }) {
   if (players.length === 0) {
     return (
       <EmptyState
@@ -14,7 +14,7 @@ export default function PlayerList({ players, emptyMessage }: { players: Player[
   }
   return (
     <div className="grid gap-2 sm:grid-cols-2">
-      {players.map((p) => <PlayerCard key={p.id} player={p} />)}
+      {players.map((p) => <PlayerCard key={p.id} player={p} team={teams?.find(t => t.id === p.teamId)} />)}
     </div>
   );
 }

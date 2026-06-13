@@ -29,10 +29,10 @@ export default function PlayersClient({ players, teams }: { players: Player[]; t
           className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm dark:border-slate-700 dark:bg-night-900"
         >
           <option value="all">All teams</option>
-          {teams.map((t) => <option key={t.id} value={t.id}>{t.name}</option>)}
+          {teams.map((t) => <option key={t.id} value={t.id}>{t.flag ? t.flag + " " : ""}{t.name}</option>)}
         </select>
       </div>
-      <PlayerList players={filtered} emptyMessage="No players match this filter, or squads haven't been announced by official sources yet." />
+      <PlayerList players={filtered} teams={teams} emptyMessage="No players match this filter, or squads haven't been announced by official sources yet." />
     </div>
   );
 }
