@@ -5,8 +5,8 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 **Every piece of tournament data comes from official sources, with attribution and last-updated timestamps. Nothing is invented.**
 
 - **Live demo:** _add your Vercel URL here after deployment_
-- **Repository:** `https://github.com/<your-username>/world-cup-2026-companion`
-- **Version:** v1.0.0
+- **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
+- **Version:** v1.1.0
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -99,6 +99,7 @@ See `.env.example`. All `OFFICIAL_*_URL` variables point at official endpoints/f
 | `OFFICIAL_BROADCASTERS_URL` | Where-to-watch rights holders |
 | `OFFICIAL_NEWS_RSS_URL` | Official RSS/JSON news feed |
 | `OFFICIAL_STADIUMS_URL`, `OFFICIAL_TRAVEL_URL`, `OFFICIAL_WATCH_PARTIES_URL`, `OFFICIAL_TICKETS_URL` | Venue, travel, fan-event, ticketing feeds |
+| `FOOTBALL_DATA_API_KEY` | [football-data.org](https://www.football-data.org) free-tier API key for live scores/standings overlay |
 | `WEATHER_API_KEY`, `MAPS_API_KEY` | Optional, only if their terms allow |
 | `ADMIN_PASSWORD` | Enables `/admin` + admin API |
 | `CRON_SECRET` | Authenticates Vercel cron calls |
@@ -164,7 +165,14 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.0.0** (git tag `v1.0.0`). See `CHANGELOG.md` and `RELEASE_NOTES_v1.0.0.md`.
+Semantic versioning. Current release: **v1.1.0** (git tag `v1.1.0`).
+
+**v1.1.0** — football-data.org v4 live-score overlay
+- Add `services/normalizers/footballData.ts`: normalizes fixtures and standings from the football-data.org v4 API (free tier with API key)
+- Export `resolveTeamMeta` from the openfootball normalizer so cross-normalizer team lookups share the same TEAMS registry
+- Add optional `headers()` config to `baseSource` so API-key sources (like football-data.org) can inject auth headers without touching the base fetch logic
+
+**v1.0.0** — Initial release
 
 ## Roadmap
 
