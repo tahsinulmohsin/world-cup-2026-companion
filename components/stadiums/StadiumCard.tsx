@@ -1,6 +1,7 @@
 import Link from "next/link";
 import DataSourceBadge from "@/components/ui/DataSourceBadge";
 import StadiumClock from "./StadiumClock";
+import StadiumWeather from "./StadiumWeather";
 import type { Stadium } from "@/types";
 
 export default function StadiumCard({ stadium }: { stadium: Stadium }) {
@@ -36,7 +37,7 @@ export default function StadiumCard({ stadium }: { stadium: Stadium }) {
           </div>
           <div>
             <dt className="text-[11px] uppercase tracking-wide text-slate-500">Weather</dt>
-            <dd className="text-slate-400">Add weather API</dd>
+            <dd className="font-semibold"><StadiumWeather lat={stadium.latitude} lng={stadium.longitude} compact /></dd>
           </div>
         </dl>
         <div className="mt-3"><DataSourceBadge meta={stadium.sourceMeta} /></div>

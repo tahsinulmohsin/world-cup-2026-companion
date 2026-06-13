@@ -8,16 +8,18 @@
     "timezone": "America/Mexico_City",
     "capacity": 87523,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg/960px-Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Estadio%20Azteca",
     "localInfo": {
       "nearestAirport": "Mexico City International Airport (MEX)",
       "publicTransport": "Tren Ligero light rail to Estadio Azteca station; Metro Line 2 to Tasqueña.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Estadio%20Azteca",
       "attractions": "Historic centre (Zócalo), Coyoacán, Xochimilco canals.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Estadio%20Azteca",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Estadio%20Azteca",
       "safetyTips": "Use registered taxis or ride-hail apps; keep valuables out of sight on transit."
-    }
+    },
+    "latitude": 19.3029,
+    "longitude": -99.1505
   },
   {
     "id": "bbva",
@@ -28,16 +30,18 @@
     "timezone": "America/Monterrey",
     "capacity": 53500,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG/960px-Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Estadio%20BBVA",
     "localInfo": {
       "nearestAirport": "Monterrey International Airport (MTY)",
       "publicTransport": "Metrorrey plus matchday shuttle services.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Estadio%20BBVA",
       "attractions": "Macroplaza, Fundidora Park, Santa Lucía Riverwalk.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Estadio%20BBVA",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Estadio%20BBVA",
       "safetyTips": "Summer heat can be intense; carry water."
-    }
+    },
+    "latitude": 25.6687,
+    "longitude": -100.2443
   },
   {
     "id": "akron",
@@ -48,16 +52,18 @@
     "timezone": "America/Mexico_City",
     "capacity": 49850,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Estadio_Akron_02-07-2022_cabecera_sur_lado_derecho_%283%29.jpg/960px-Estadio_Akron_02-07-2022_cabecera_sur_lado_derecho_%283%29.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Estadio%20Akron",
     "localInfo": {
       "nearestAirport": "Guadalajara International Airport (GDL)",
       "publicTransport": "Mi Macro Periférico BRT plus matchday shuttles.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Estadio%20Akron",
       "attractions": "Tlaquepaque, Hospicio Cabañas, Tequila day trips.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Estadio%20Akron",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Estadio%20Akron",
       "safetyTips": "Plan extra travel time on matchdays."
-    }
+    },
+    "latitude": 20.6817,
+    "longitude": -103.4627
   },
   {
     "id": "metlife",
@@ -68,16 +74,18 @@
     "timezone": "America/New_York",
     "capacity": 82500,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Metlife_stadium_%28Aerial_view%29.jpg/960px-Metlife_stadium_%28Aerial_view%29.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=New%20York%20New%20Jersey%20Stadium%20(MetLife%20Stadium)",
     "localInfo": {
       "nearestAirport": "Newark Liberty International Airport (EWR)",
       "publicTransport": "NJ Transit rail to Meadowlands Sports Complex on event days.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+New%20York%20New%20Jersey%20Stadium%20(MetLife%20Stadium)",
       "attractions": "Manhattan sights, Liberty State Park, American Dream complex.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+New%20York%20New%20Jersey%20Stadium%20(MetLife%20Stadium)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=New%20York%20New%20Jersey%20Stadium%20(MetLife%20Stadium)",
       "safetyTips": "Allow extra time for stadium security screening."
-    }
+    },
+    "latitude": 40.8136,
+    "longitude": -74.0745
   },
   {
     "id": "att",
@@ -88,16 +96,18 @@
     "timezone": "America/Chicago",
     "capacity": 80000,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Arlington_June_2020_4_%28AT%26T_Stadium%29.jpg/960px-Arlington_June_2020_4_%28AT%26T_Stadium%29.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dallas%20Stadium%20(AT%26T%20Stadium)",
     "localInfo": {
       "nearestAirport": "Dallas/Fort Worth International Airport (DFW)",
       "publicTransport": "Trinity Metro/DART connections plus event shuttles; rideshare zones available.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Dallas%20Stadium%20(AT%26T%20Stadium)",
       "attractions": "Arlington Entertainment District, Dallas Arts District.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Dallas%20Stadium%20(AT%26T%20Stadium)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Dallas%20Stadium%20(AT%26T%20Stadium)",
       "safetyTips": "Texas summer heat — hydrate before kickoff."
-    }
+    },
+    "latitude": 32.7473,
+    "longitude": -97.0945
   },
   {
     "id": "arrowhead",
@@ -108,16 +118,18 @@
     "timezone": "America/Chicago",
     "capacity": 76416,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg/960px-Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kansas%20City%20Stadium%20(Arrowhead%20Stadium)",
     "localInfo": {
       "nearestAirport": "Kansas City International Airport (MCI)",
       "publicTransport": "RideKC buses and matchday express shuttles.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Kansas%20City%20Stadium%20(Arrowhead%20Stadium)",
       "attractions": "National WWI Museum, Country Club Plaza, KC barbecue trail.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Kansas%20City%20Stadium%20(Arrowhead%20Stadium)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Kansas%20City%20Stadium%20(Arrowhead%20Stadium)",
       "safetyTips": "Stadium is outside downtown — plan transport in advance."
-    }
+    },
+    "latitude": 39.0489,
+    "longitude": -94.4839
   },
   {
     "id": "nrg",
@@ -128,16 +140,18 @@
     "timezone": "America/Chicago",
     "capacity": 72220,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nrg_stadium.jpg/960px-Nrg_stadium.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Houston%20Stadium%20(NRG%20Stadium)",
     "localInfo": {
       "nearestAirport": "George Bush Intercontinental (IAH) / Hobby (HOU)",
       "publicTransport": "METRORail Red Line to Stadium Park/Astrodome.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Houston%20Stadium%20(NRG%20Stadium)",
       "attractions": "Space Center Houston, Museum District.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Houston%20Stadium%20(NRG%20Stadium)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Houston%20Stadium%20(NRG%20Stadium)",
       "safetyTips": "Roofed venue, but expect humidity outdoors."
-    }
+    },
+    "latitude": 29.6847,
+    "longitude": -95.4107
   },
   {
     "id": "mercedes",
@@ -148,16 +162,18 @@
     "timezone": "America/New_York",
     "capacity": 71000,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg/960px-Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Atlanta%20Stadium%20(Mercedes-Benz%20Stadium)",
     "localInfo": {
       "nearestAirport": "Hartsfield–Jackson Atlanta International Airport (ATL)",
       "publicTransport": "MARTA rail to GWCC/CNN Center or Vine City.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Atlanta%20Stadium%20(Mercedes-Benz%20Stadium)",
       "attractions": "Georgia Aquarium, Centennial Olympic Park, MLK National Historical Park.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Atlanta%20Stadium%20(Mercedes-Benz%20Stadium)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Atlanta%20Stadium%20(Mercedes-Benz%20Stadium)",
       "safetyTips": "Downtown venue — walking access from many hotels."
-    }
+    },
+    "latitude": 33.7554,
+    "longitude": -84.4008
   },
   {
     "id": "sofi",
@@ -168,16 +184,18 @@
     "timezone": "America/Los_Angeles",
     "capacity": 70240,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/SoFi_Stadium_2023.jpg/960px-SoFi_Stadium_2023.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Los%20Angeles%20Stadium%20(SoFi%20Stadium)",
     "localInfo": {
       "nearestAirport": "Los Angeles International Airport (LAX)",
       "publicTransport": "LA Metro K Line plus event shuttles from Downtown Inglewood.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Los%20Angeles%20Stadium%20(SoFi%20Stadium)",
       "attractions": "Santa Monica, Hollywood, Griffith Observatory.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Los%20Angeles%20Stadium%20(SoFi%20Stadium)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Los%20Angeles%20Stadium%20(SoFi%20Stadium)",
       "safetyTips": "Book transport early — LA traffic peaks on matchdays."
-    }
+    },
+    "latitude": 33.9534,
+    "longitude": -118.3387
   },
   {
     "id": "lincoln",
@@ -188,16 +206,18 @@
     "timezone": "America/New_York",
     "capacity": 69796,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Lincoln_Financial_Field_%28Aerial_view%29.jpg/960px-Lincoln_Financial_Field_%28Aerial_view%29.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Philadelphia%20Stadium%20(Lincoln%20Financial%20Field)",
     "localInfo": {
       "nearestAirport": "Philadelphia International Airport (PHL)",
       "publicTransport": "SEPTA Broad Street Line to NRG station.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Philadelphia%20Stadium%20(Lincoln%20Financial%20Field)",
       "attractions": "Independence Hall, Liberty Bell, Philadelphia Museum of Art.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Philadelphia%20Stadium%20(Lincoln%20Financial%20Field)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Philadelphia%20Stadium%20(Lincoln%20Financial%20Field)",
       "safetyTips": "Sports complex area is well signposted from the subway."
-    }
+    },
+    "latitude": 39.9008,
+    "longitude": -75.1675
   },
   {
     "id": "lumen",
@@ -208,16 +228,18 @@
     "timezone": "America/Los_Angeles",
     "capacity": 69000,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg/960px-2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Seattle%20Stadium%20(Lumen%20Field)",
     "localInfo": {
       "nearestAirport": "Seattle–Tacoma International Airport (SEA)",
       "publicTransport": "Link light rail to Stadium station.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Seattle%20Stadium%20(Lumen%20Field)",
       "attractions": "Pike Place Market, Space Needle, waterfront.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Seattle%20Stadium%20(Lumen%20Field)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Seattle%20Stadium%20(Lumen%20Field)",
       "safetyTips": "Downtown venue — light rail is the easiest option."
-    }
+    },
+    "latitude": 47.5952,
+    "longitude": -122.3316
   },
   {
     "id": "levis",
@@ -228,16 +250,18 @@
     "timezone": "America/Los_Angeles",
     "capacity": 68500,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_%2824398261729%29.jpg/960px-Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_%2824398261729%29.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=San%20Francisco%20Bay%20Area%20Stadium%20(Levi's%20Stadium)",
     "localInfo": {
       "nearestAirport": "San José Mineta International (SJC) / San Francisco (SFO)",
       "publicTransport": "VTA light rail to Great America station; Caltrain connections.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+San%20Francisco%20Bay%20Area%20Stadium%20(Levi's%20Stadium)",
       "attractions": "San Francisco sights, Silicon Valley tech landmarks.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+San%20Francisco%20Bay%20Area%20Stadium%20(Levi's%20Stadium)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=San%20Francisco%20Bay%20Area%20Stadium%20(Levi's%20Stadium)",
       "safetyTips": "Stadium is in Santa Clara, ~70 km from San Francisco — plan accordingly."
-    }
+    },
+    "latitude": 37.4032,
+    "longitude": -121.9698
   },
   {
     "id": "gillette",
@@ -248,16 +272,18 @@
     "timezone": "America/New_York",
     "capacity": 65878,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Gillette_Stadium_%28Top_View%29.jpg/960px-Gillette_Stadium_%28Top_View%29.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston%20Stadium%20(Gillette%20Stadium)",
     "localInfo": {
       "nearestAirport": "Boston Logan International Airport (BOS)",
       "publicTransport": "MBTA event trains to Foxboro station on matchdays.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Boston%20Stadium%20(Gillette%20Stadium)",
       "attractions": "Freedom Trail, Fenway area, Harvard/MIT campuses.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Boston%20Stadium%20(Gillette%20Stadium)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Boston%20Stadium%20(Gillette%20Stadium)",
       "safetyTips": "Venue is ~45 km from Boston — check event train schedules."
-    }
+    },
+    "latitude": 42.0909,
+    "longitude": -71.2643
   },
   {
     "id": "hardrock",
@@ -268,16 +294,18 @@
     "timezone": "America/New_York",
     "capacity": 64767,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Hard_Rock_Stadium_for_Super_Bowl_LIV_%2849606710103%29.jpg/960px-Hard_Rock_Stadium_for_Super_Bowl_LIV_%2849606710103%29.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Miami%20Stadium%20(Hard%20Rock%20Stadium)",
     "localInfo": {
       "nearestAirport": "Miami International Airport (MIA)",
       "publicTransport": "Matchday shuttles and rideshare; limited rail access.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Miami%20Stadium%20(Hard%20Rock%20Stadium)",
       "attractions": "South Beach, Wynwood Walls, Everglades tours.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Miami%20Stadium%20(Hard%20Rock%20Stadium)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Miami%20Stadium%20(Hard%20Rock%20Stadium)",
       "safetyTips": "Afternoon thunderstorms are common in summer."
-    }
+    },
+    "latitude": 25.958,
+    "longitude": -80.2389
   },
   {
     "id": "bmo",
@@ -288,16 +316,18 @@
     "timezone": "America/Toronto",
     "capacity": 45736,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Toronto_BMO_Field_in_2024.jpg/960px-Toronto_BMO_Field_in_2024.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Toronto%20Stadium%20(BMO%20Field)",
     "localInfo": {
       "nearestAirport": "Toronto Pearson International Airport (YYZ)",
       "publicTransport": "GO Transit/TTC to Exhibition station.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Toronto%20Stadium%20(BMO%20Field)",
       "attractions": "CN Tower, Distillery District, Toronto Islands.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Toronto%20Stadium%20(BMO%20Field)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Toronto%20Stadium%20(BMO%20Field)",
       "safetyTips": "Exhibition Place fills quickly — arrive early."
-    }
+    },
+    "latitude": 43.6332,
+    "longitude": -79.4186
   },
   {
     "id": "bcplace",
@@ -308,15 +338,17 @@
     "timezone": "America/Vancouver",
     "capacity": 54500,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/BC_Place_2015_Women%27s_FIFA_World_Cup.jpg/960px-BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
-    "mapUrl": null,
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vancouver%20Stadium%20(BC%20Place)",
     "localInfo": {
       "nearestAirport": "Vancouver International Airport (YVR)",
       "publicTransport": "SkyTrain Expo Line to Stadium–Chinatown station.",
-      "parking": null,
+      "parking": "https://www.openstreetmap.org/search?query=parking+near+Vancouver%20Stadium%20(BC%20Place)",
       "attractions": "Stanley Park, Granville Island, Gastown.",
-      "food": null,
-      "hotels": null,
+      "food": "https://www.tripadvisor.com/Search?q=Restaurants+near+Vancouver%20Stadium%20(BC%20Place)",
+      "hotels": "https://www.booking.com/searchresults.html?ss=Vancouver%20Stadium%20(BC%20Place)",
       "safetyTips": "Downtown venue — walkable from most central hotels."
-    }
+    },
+    "latitude": 49.2767,
+    "longitude": -123.112
   }
 ]

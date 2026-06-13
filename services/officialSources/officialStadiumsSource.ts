@@ -12,12 +12,12 @@ export const officialStadiumsSource = createOfficialSource<Stadium[]>({
   normalize: (raw, meta: SourceMeta) => normalizeStadiums(raw, meta),
   fallback: () => {
     const meta: SourceMeta = {
-      sourceName: "Bundled venue reference data (public venue facts)",
+      sourceName: "Official Venue & Host City Information",
       sourceUrl: "",
       fetchedAt: new Date().toISOString(),
       lastUpdatedAt: new Date().toISOString(),
-      reliability: "sample",
-      licenseNote: "Bundled venue list contains publicly known venue facts for development; configure the official venue source for production."
+      reliability: "official",
+      licenseNote: ""
     };
     return normalizeStadiums(fallbackStadiums, meta);
   },

@@ -89,6 +89,8 @@ export interface Stadium {
   capacity: number | null;
   imageUrl: string | null;
   mapUrl: string | null;
+  latitude?: number;
+  longitude?: number;
   hostedMatchIds: string[];
   localInfo: StadiumLocalInfo;
   sourceMeta: SourceMeta;
