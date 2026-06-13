@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Countdown from "@/components/home/Countdown";
 import HomeMatches from "./HomeMatches";
-import KnockoutBracket from "@/components/knockout/KnockoutBracket";
+import LiveCommentary from "@/components/home/LiveCommentary";
 import NewsCard from "@/components/news/NewsCard";
 import Leaderboard from "@/components/stats/Leaderboard";
 import ErrorState from "@/components/ui/ErrorState";
@@ -48,10 +48,9 @@ export default async function HomePage() {
 
       <section>
         <div className="mb-3 flex items-center justify-between">
-          <h2 className="font-display text-xl font-bold">Knockout bracket preview</h2>
-          <Link href="/knockout" className="text-sm font-medium text-pitch-600 hover:underline dark:text-pitch-400">Full bracket →</Link>
+          <h2 className="font-display text-xl font-bold">Live Match Coverage</h2>
         </div>
-        <KnockoutBracket fixtures={knockout} stadiums={stadiums} compact />
+        <LiveCommentary />
       </section>
 
       <div className="grid gap-6 lg:grid-cols-3">

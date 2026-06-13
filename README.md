@@ -4,11 +4,17 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 **Every piece of tournament data comes from official sources, with attribution and last-updated timestamps. Nothing is invented.**
 
-- **Live demo:** _add your Vercel URL here after deployment_
+- **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.1.0
+- **Version:** v1.2.0
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
+
+## AI Development
+
+This is a **completely vibe coded project**.
+- **Tools used:** Claude Code and Google Antigravity
+- **Models used:** Claude Fable 5, Claude 4.8 Opus, Gemini 3.1 Pro
 
 ---
 
@@ -165,7 +171,15 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.1.0** (git tag `v1.1.0`).
+Semantic versioning. Current release: **v1.2.0** (git tag `v1.2.0`).
+
+**v1.2.0** — Wikipedia integration & ESPN live matches
+- Integrated ESPN live scoreboard and summary endpoints for match centre live commentary
+- Dynamically scraped Wikipedia for official 2026 World Cup squads
+- Implemented bulk Wikipedia `pageimages` fetching to render high-quality player portraits
+- Extracted career international goals and appearances to populate fallback tournament stats
+- Made stats board dynamically render to provide instant updates
+- Streamlined UI by removing missing bios and gracefully handling empty leaderboards
 
 **v1.1.0** — football-data.org v4 live-score overlay
 - Add `services/normalizers/footballData.ts`: normalizes fixtures and standings from the football-data.org v4 API (free tier with API key)

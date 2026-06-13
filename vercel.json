@@ -1,4 +1,12 @@
 {
+  "env": {
+    "OFFICIAL_FEDERATION_SQUADS_URL": "https://world-cup-2026-companion-xi.vercel.app/api/official-squads"
+  },
+  "build": {
+    "env": {
+      "OFFICIAL_FEDERATION_SQUADS_URL": "https://world-cup-2026-companion-xi.vercel.app/api/official-squads"
+    }
+  },
   "crons": [
     { "path": "/api/cron/fixtures", "schedule": "0 4 * * *" },
     { "path": "/api/cron/standings", "schedule": "10 4 * * *" },

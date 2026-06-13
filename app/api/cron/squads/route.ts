@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { refreshScope } from "@/services/sync/syncService";
 
 export const dynamic = "force-dynamic";
@@ -10,5 +11,7 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   const result = await refreshScope("squads");
+  revalidatePath("/players");
+  revalidatePath("/players/[id]", "page");
   return NextResponse.json(result);
 }

@@ -17,7 +17,7 @@ export default function HomeMatches({
   teams: Team[];
   stadiums: Record<string, Stadium | undefined>;
 }) {
-  const [filter, setFilter] = useState("today");
+  const [filter, setFilter] = useState("upcoming");
   const { favorites } = useFavorites();
   const { t } = useTranslation();
   const teamMap = useMemo(() => Object.fromEntries(teams.map((tm) => [tm.id, tm])), [teams]);
@@ -28,6 +28,7 @@ export default function HomeMatches({
     const tz = getUserTimezone();
     let list = fixtures.filter((f) => f.status !== "fulltime");
     switch (filter) {
+      case "upcoming": break;
       case "today": list = list.filter((f) => isToday(f.dateTimeUTC, tz)); break;
       case "tomorrow": list = list.filter((f) => isTomorrow(f.dateTimeUTC, tz)); break;
       case "group": list = list.filter((f) => !f.isKnockout); break;
@@ -56,6 +57,7 @@ export default function HomeMatches({
           active={filter}
           onSelect={setFilter}
           options={[
+            { id: "upcoming", label: "Upcoming" },
             { id: "today", label: t("common.today") },
             { id: "tomorrow", label: t("common.tomorrow") },
             { id: "group", label: "Group Stage" },

@@ -4,7 +4,7 @@ import LastUpdatedBadge from "@/components/ui/LastUpdatedBadge";
 import { getSquads, getStandings } from "@/services/sync/syncService";
 
 export const metadata = { title: "Stats" };
-export const revalidate = 600;
+export const dynamic = "force-dynamic";
 
 export default async function StatsPage() {
   const [squadsRes, standingsRes] = await Promise.all([getSquads(), getStandings()]);
@@ -43,12 +43,14 @@ export default async function StatsPage() {
         </div>
       </header>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <Leaderboard title="⚽ Top scorers" rows={byStat("goals")} />
-        <Leaderboard title="🅰️ Top assists" rows={byStat("assists")} />
-        <Leaderboard title="🟨 Most yellow cards" rows={byStat("yellowCards")} />
-        <Leaderboard title="🟥 Most red cards" rows={byStat("redCards")} />
-        <Leaderboard title="🔥 Team — most goals" rows={teamGoals} />
-        <Leaderboard title="🧱 Team — best defense (GA)" rows={bestDefense} />
+        {byStat("goals").length > 0 && <Leaderboard title="⚽ Top scorers" rows={byStat("goals")} />}
+        {byStat("assists").length > 0 && <Leaderboard title="🅰️ Top assists" rows={byStat("assists")} />}
+        {byStat("yellowCards").length > 0 && <Leaderboard title="🟨 Most yellow cards" rows={byStat("yellowCards")} />}
+        {byStat("redCards").length > 0 && <Leaderboard title="🟥 Most red cards" rows={byStat("redCards")} />}
+        {teamGoals.length > 0 && <Leaderboard title="🔥 Team — most goals" rows={teamGoals} />}
+        {bestDefense.length > 0 && <Leaderboard title="🧱 Team — best defense (GA)" rows={bestDefense} />}
+        {byStat("goals").length === 0 && <UnavailableStat title="⚽ Top scorers" />}
+        {byStat("assists").length === 0 && <UnavailableStat title="🅰️ Top assists" />}
         <UnavailableStat title="🧤 Most clean sheets" />
         <UnavailableStat title="🏅 Player of the match leaderboard" />
         <UnavailableStat title="🤝 Fair play ranking" />

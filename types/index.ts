@@ -104,6 +104,7 @@ export interface Player {
   age: number | null;
   nationality: string | null;
   isKeyPlayer: boolean;
+  imageUrl?: string | null;
   goals: number | null;
   assists: number | null;
   yellowCards: number | null;

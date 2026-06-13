@@ -18,6 +18,7 @@ export function normalizePlayers(raw: unknown, meta: SourceMeta): Player[] {
       age: num(r.age),
       nationality: str(r.nationality),
       isKeyPlayer: r.isKeyPlayer === true,
+      imageUrl: str(r.imageUrl),
       goals: num(r.goals),
       assists: num(r.assists),
       yellowCards: num(r.yellowCards),

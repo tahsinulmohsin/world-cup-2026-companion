@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { refreshAll, refreshScope, type SyncScope } from "@/services/sync/syncService";
 
 export const dynamic = "force-dynamic";
@@ -15,7 +16,13 @@ export async function POST(req: Request) {
   }
   const body = (await req.json().catch(() => ({}))) as { scope?: string };
   if (body.scope && SCOPES.includes(body.scope as SyncScope)) {
-    return NextResponse.json(await refreshScope(body.scope as SyncScope));
+    const res = await refreshScope(body.scope as SyncScope);
+    revalidatePath("/players");
+    revalidatePath("/players/[id]", "page");
+    return NextResponse.json(res);
   }
-  return NextResponse.json(await refreshAll());
+  const allRes = await refreshAll();
+  revalidatePath("/players");
+  revalidatePath("/players/[id]", "page");
+  return NextResponse.json(allRes);
 }
