@@ -35,8 +35,7 @@ export const NAV_ITEMS: Array<{ href: string; labelKey: string }> = [
   { href: "/my-world-cup", labelKey: "nav.myWorldCup" },
   { href: "/reminders", labelKey: "nav.reminders" },
   { href: "/tickets", labelKey: "nav.tickets" },
-  { href: "/settings", labelKey: "nav.settings" },
-  { href: "/admin", labelKey: "nav.admin" }
+  { href: "/settings", labelKey: "nav.settings" }
 ];
 
 /** Country options for the where-to-watch selector. */

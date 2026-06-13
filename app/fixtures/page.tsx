@@ -15,6 +15,12 @@ export default async function FixturesPage() {
         <div>
           <h1 className="font-display text-2xl font-extrabold">Fixtures</h1>
           <p className="text-sm text-slate-500">All 2026 World Cup matches, in your time.</p>
+          <a
+            href="webcal://world-cup-2026-companion-xi.vercel.app/api/calendar"
+            className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-pitch-600 px-4 py-1.5 text-sm font-medium text-white transition hover:bg-pitch-700 dark:bg-pitch-500 dark:text-night-950 dark:hover:bg-pitch-400"
+          >
+            <span aria-hidden>📅</span> Add all to Google Calendar
+          </a>
         </div>
         <div className="flex items-center gap-3">
           <DataSourceBadge meta={fixturesRes.meta} />

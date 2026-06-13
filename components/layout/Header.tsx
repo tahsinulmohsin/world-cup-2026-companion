@@ -15,7 +15,7 @@ export default function Header() {
   const { t } = useTranslation();
 
   return (
-    <header className="sticky top-0 z-30 border-b border-slate-200/80 bg-white/85 backdrop-blur dark:border-night-800 dark:bg-night-950/85">
+    <header className="sticky top-0 z-30 bg-transparent">
       <OfflineIndicator />
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
         <Link href="/" className="flex items-center gap-2">
