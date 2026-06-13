@@ -108,7 +108,7 @@ export function createOfficialSource<TData>(
 
     // 1. No official endpoint configured → sample fallback / unavailable.
     if (!url) {
-      return fallbackResult("Official source endpoint is not configured (set " + cfg.envUrlKey + ").");
+      return fallbackResult();
     }
 
     // 2. Fresh cache hit.
