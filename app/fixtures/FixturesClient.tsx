@@ -80,52 +80,54 @@ export default function FixturesClient({
             { id: "mustwatch", label: "Must-watch" }
           ]}
         />
-        <div className="flex flex-wrap items-center gap-2">
-          <select aria-label="Round" className={select} value={round} onChange={(e) => setRound(e.target.value)}>
+        <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:items-center">
+          <select aria-label="Round" className={select + " w-full sm:w-auto"} value={round} onChange={(e) => setRound(e.target.value)}>
             <option value="all">All rounds</option>
             {["Group Stage", "Round of 32", "Round of 16", "Quarter-final", "Semi-final", "Third-place Match", "Final"].map((r) => (
               <option key={r} value={r}>{r}</option>
             ))}
           </select>
-          <select aria-label="Team" className={select} value={team} onChange={(e) => setTeam(e.target.value)}>
+          <select aria-label="Team" className={select + " w-full sm:w-auto"} value={team} onChange={(e) => setTeam(e.target.value)}>
             <option value="all">All teams</option>
             {teams.map((tm) => <option key={tm.id} value={tm.id}>{tm.name}</option>)}
           </select>
-          <select aria-label="Group" className={select} value={group} onChange={(e) => setGroup(e.target.value)}>
+          <select aria-label="Group" className={select + " w-full sm:w-auto"} value={group} onChange={(e) => setGroup(e.target.value)}>
             <option value="all">All groups</option>
             {groups.map((g) => <option key={g} value={g}>Group {g}</option>)}
           </select>
-          <select aria-label="Stadium" className={select} value={stadiumId} onChange={(e) => setStadiumId(e.target.value)}>
+          <select aria-label="Stadium" className={select + " col-span-2 w-full sm:w-auto"} value={stadiumId} onChange={(e) => setStadiumId(e.target.value)}>
             <option value="all">All stadiums</option>
             {stadiums.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
           </select>
-          <select aria-label="Host country" className={select} value={country} onChange={(e) => setCountry(e.target.value)}>
+          <select aria-label="Host country" className={select + " w-full sm:w-auto"} value={country} onChange={(e) => setCountry(e.target.value)}>
             <option value="all">All host countries</option>
             {countries.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
-          <select aria-label="Status" className={select} value={status} onChange={(e) => setStatus(e.target.value)}>
+          <select aria-label="Status" className={select + " w-full sm:w-auto"} value={status} onChange={(e) => setStatus(e.target.value)}>
             <option value="all">Any status</option>
             <option value="scheduled">Upcoming</option>
             <option value="live">Live</option>
             <option value="fulltime">Finished</option>
           </select>
-          <TimezoneToggle />
-          <label className="inline-flex cursor-pointer items-center gap-1.5 text-sm">
-            <input type="checkbox" checked={spoilerFree} onChange={(e) => setSpoilerFree(e.target.checked)} className="accent-pitch-600" />
-            Spoiler-free
-          </label>
+          <div className="col-span-2 flex flex-wrap items-center gap-2">
+            <TimezoneToggle />
+            <label className="inline-flex cursor-pointer items-center gap-1.5 text-sm">
+              <input type="checkbox" checked={spoilerFree} onChange={(e) => setSpoilerFree(e.target.checked)} className="accent-pitch-600" />
+              Spoiler-free
+            </label>
+          </div>
         </div>
-        <div className="flex flex-wrap gap-2 text-sm">
-          <button onClick={() => exportCalendar(fixtures, "World Cup 2026 — all matches", "wc26-all-matches.ics")} className="rounded-full px-3 py-1.5 font-medium ring-1 ring-inset ring-slate-300 hover:bg-white dark:ring-slate-700 dark:hover:bg-night-800">📅 All matches → calendar</button>
+        <div className="grid grid-cols-2 gap-2 text-sm sm:flex sm:flex-wrap">
+          <button onClick={() => exportCalendar(fixtures, "World Cup 2026 — all matches", "wc26-all-matches.ics")} className="rounded-full px-3 py-1.5 font-medium ring-1 ring-inset ring-slate-300 hover:bg-white dark:ring-slate-700 dark:hover:bg-night-800">📅 All matches</button>
           <button
             onClick={() => exportCalendar(fixtures.filter((f) => (f.homeTeamId && favorites.includes(f.homeTeamId)) || (f.awayTeamId && favorites.includes(f.awayTeamId))), "World Cup 2026 — my teams", "wc26-my-teams.ics")}
             className="rounded-full px-3 py-1.5 font-medium ring-1 ring-inset ring-slate-300 hover:bg-white dark:ring-slate-700 dark:hover:bg-night-800"
-          >★ Favorite teams → calendar</button>
-          <button onClick={() => exportCalendar(fixtures.filter((f) => f.isKnockout), "World Cup 2026 — knockout", "wc26-knockout.ics")} className="rounded-full px-3 py-1.5 font-medium ring-1 ring-inset ring-slate-300 hover:bg-white dark:ring-slate-700 dark:hover:bg-night-800">🏆 Knockout → calendar</button>
+          >★ My teams</button>
+          <button onClick={() => exportCalendar(fixtures.filter((f) => f.isKnockout), "World Cup 2026 — knockout", "wc26-knockout.ics")} className="rounded-full px-3 py-1.5 font-medium ring-1 ring-inset ring-slate-300 hover:bg-white dark:ring-slate-700 dark:hover:bg-night-800">🏆 Knockout</button>
           <button
             onClick={() => exportCalendar(fixtures.filter((f) => f.importanceLabel === "Opening Match" || f.round === "Semi-final" || f.round === "Final"), "World Cup 2026 — showpiece matches", "wc26-showpiece.ics")}
             className="rounded-full px-3 py-1.5 font-medium ring-1 ring-inset ring-slate-300 hover:bg-white dark:ring-slate-700 dark:hover:bg-night-800"
-          >✨ Opener, semis & final</button>
+          >✨ Key matches</button>
         </div>
       </div>
 
