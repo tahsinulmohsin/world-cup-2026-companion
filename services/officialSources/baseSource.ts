@@ -144,7 +144,13 @@ export function createOfficialSource<TData>(
       if (!res.ok) throw new SourceError(cfg.id, "http", `HTTP ${res.status}`, res.status);
 
       const contentType = res.headers.get("content-type") ?? "";
-      const raw: unknown = contentType.includes("json") ? await res.json() : await res.text();
+      const text = await res.text();
+      let raw: unknown;
+      try {
+        raw = JSON.parse(text);
+      } catch {
+        raw = text;
+      }
 
       if (!cfg.validate(raw)) {
         throw new SourceError(cfg.id, "invalid_payload", "Payload failed validation");
