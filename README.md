@@ -181,6 +181,7 @@ Semantic versioning. Current release: **v1.3.0** (git tag `v1.3.0`).
 - Fixed filter layout overlap issues on mobile
 - Implemented user-created local watch parties with localStorage persistence
 - Scraped Wikipedia to integrate official broadcasters for matches
+- Fixed a critical React 18 `useSyncExternalStore` hydration infinite loop on the Watch Parties page
 
 **v1.2.0** — Wikipedia integration & ESPN live matches
 - Integrated ESPN live scoreboard and summary endpoints for match centre live commentary
