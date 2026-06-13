@@ -32,8 +32,8 @@ export default function Leaderboard({
   );
 }
 
-export function UnavailableStat({ title }: { title: string }) {
+export function UnavailableStat({ title, message }: { title: string; message?: string }) {
   return (
-    <EmptyState title={title} message="This statistic appears once it is published by the official tournament source." icon="📊" />
+    <EmptyState title={title} message={message ?? "This statistic appears once it is published by the official tournament source."} icon="📊" />
   );
 }

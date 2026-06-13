@@ -68,7 +68,7 @@ export default function FixturesClient({
 
   return (
     <div className="space-y-4">
-      <div className="sticky top-[105px] z-20 -mx-4 space-y-3 bg-slate-50/95 px-4 py-3 backdrop-blur dark:bg-night-950/95 sm:static sm:mx-0 sm:bg-transparent sm:px-0 sm:py-0 sm:backdrop-blur-none dark:sm:bg-transparent">
+      <div className="space-y-3 rounded-2xl bg-slate-50 px-4 py-3 dark:bg-night-900/50">
         <SearchBar value={query} onChange={setQuery} placeholder={t("common.search")} />
         <FilterBar
           active={scope}
