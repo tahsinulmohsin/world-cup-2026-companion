@@ -21,18 +21,28 @@ export interface LocalWatchParty {
 let listeners: Array<() => void> = [];
 function emitChange() { listeners.forEach((l) => l()); }
 
+const EMPTY_ARRAY: LocalWatchParty[] = [];
+let cachedSnapshot: LocalWatchParty[] | null = null;
+let cachedRawString: string | null = null;
+
 function getSnapshot(): LocalWatchParty[] {
-  if (typeof window === "undefined") return [];
+  if (typeof window === "undefined") return EMPTY_ARRAY;
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
+    if (!raw) return EMPTY_ARRAY;
+    if (raw === cachedRawString && cachedSnapshot) return cachedSnapshot;
+    
+    cachedRawString = raw;
+    const parsed = JSON.parse(raw);
+    cachedSnapshot = Array.isArray(parsed) ? parsed : EMPTY_ARRAY;
+    return cachedSnapshot;
   } catch {
-    return [];
+    return EMPTY_ARRAY;
   }
 }
 
 function getServerSnapshot(): LocalWatchParty[] {
-  return [];
+  return EMPTY_ARRAY;
 }
 
 function subscribe(listener: () => void) {
