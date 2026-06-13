@@ -17,12 +17,20 @@ export default async function StadiumDetailPage({ params }: { params: { id: stri
 
   return (
     <div className="space-y-6">
-      <section className="rounded-3xl bg-gradient-to-br from-pitch-800 via-pitch-900 to-night-950 p-6 text-white sm:p-8">
-        <p className="text-xs font-bold uppercase tracking-widest text-trophy-400">{stadium.city} · {stadium.country}</p>
-        <h1 className="mt-1 font-display text-3xl font-extrabold">{stadium.name}</h1>
-        <p className="mt-1 text-sm text-pitch-100">
-          {stadium.capacity ? `${stadium.capacity.toLocaleString()} capacity · ` : ""}{matches.length} tournament match{matches.length === 1 ? "" : "es"}
-        </p>
+      <section className={`relative overflow-hidden rounded-3xl ${!stadium.imageUrl ? 'bg-gradient-to-br from-pitch-800 via-pitch-900 to-night-950' : 'bg-night-950'} p-6 text-white sm:p-8`}>
+        {stadium.imageUrl && (
+          <div className="absolute inset-0 opacity-40">
+            <img src={stadium.imageUrl} alt={stadium.name} className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/60 to-transparent"></div>
+          </div>
+        )}
+        <div className="relative z-10">
+          <p className="text-xs font-bold uppercase tracking-widest text-trophy-400">{stadium.city} · {stadium.country}</p>
+          <h1 className="mt-1 font-display text-3xl font-extrabold">{stadium.name}</h1>
+          <p className="mt-1 text-sm text-pitch-100">
+            {stadium.capacity ? `${stadium.capacity.toLocaleString()} capacity · ` : ""}{matches.length} tournament match{matches.length === 1 ? "" : "es"}
+          </p>
+        </div>
       </section>
 
       <StadiumDetails stadium={stadium} />

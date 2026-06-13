@@ -1,18 +1,322 @@
 [
-  {"id":"azteca","name":"Estadio Azteca","city":"Mexico City","country":"Mexico","countryCode":"MX","timezone":"America/Mexico_City","capacity":87523,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Mexico City International Airport (MEX)","publicTransport":"Tren Ligero light rail to Estadio Azteca station; Metro Line 2 to Tasqueña.","parking":null,"attractions":"Historic centre (Zócalo), Coyoacán, Xochimilco canals.","food":null,"hotels":null,"safetyTips":"Use registered taxis or ride-hail apps; keep valuables out of sight on transit."}},
-  {"id":"bbva","name":"Estadio BBVA","city":"Monterrey","country":"Mexico","countryCode":"MX","timezone":"America/Monterrey","capacity":53500,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Monterrey International Airport (MTY)","publicTransport":"Metrorrey plus matchday shuttle services.","parking":null,"attractions":"Macroplaza, Fundidora Park, Santa Lucía Riverwalk.","food":null,"hotels":null,"safetyTips":"Summer heat can be intense; carry water."}},
-  {"id":"akron","name":"Estadio Akron","city":"Guadalajara","country":"Mexico","countryCode":"MX","timezone":"America/Mexico_City","capacity":49850,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Guadalajara International Airport (GDL)","publicTransport":"Mi Macro Periférico BRT plus matchday shuttles.","parking":null,"attractions":"Tlaquepaque, Hospicio Cabañas, Tequila day trips.","food":null,"hotels":null,"safetyTips":"Plan extra travel time on matchdays."}},
-  {"id":"metlife","name":"New York New Jersey Stadium (MetLife Stadium)","city":"East Rutherford","country":"United States","countryCode":"US","timezone":"America/New_York","capacity":82500,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Newark Liberty International Airport (EWR)","publicTransport":"NJ Transit rail to Meadowlands Sports Complex on event days.","parking":null,"attractions":"Manhattan sights, Liberty State Park, American Dream complex.","food":null,"hotels":null,"safetyTips":"Allow extra time for stadium security screening."}},
-  {"id":"att","name":"Dallas Stadium (AT&T Stadium)","city":"Arlington","country":"United States","countryCode":"US","timezone":"America/Chicago","capacity":80000,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Dallas/Fort Worth International Airport (DFW)","publicTransport":"Trinity Metro/DART connections plus event shuttles; rideshare zones available.","parking":null,"attractions":"Arlington Entertainment District, Dallas Arts District.","food":null,"hotels":null,"safetyTips":"Texas summer heat — hydrate before kickoff."}},
-  {"id":"arrowhead","name":"Kansas City Stadium (Arrowhead Stadium)","city":"Kansas City","country":"United States","countryCode":"US","timezone":"America/Chicago","capacity":76416,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Kansas City International Airport (MCI)","publicTransport":"RideKC buses and matchday express shuttles.","parking":null,"attractions":"National WWI Museum, Country Club Plaza, KC barbecue trail.","food":null,"hotels":null,"safetyTips":"Stadium is outside downtown — plan transport in advance."}},
-  {"id":"nrg","name":"Houston Stadium (NRG Stadium)","city":"Houston","country":"United States","countryCode":"US","timezone":"America/Chicago","capacity":72220,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"George Bush Intercontinental (IAH) / Hobby (HOU)","publicTransport":"METRORail Red Line to Stadium Park/Astrodome.","parking":null,"attractions":"Space Center Houston, Museum District.","food":null,"hotels":null,"safetyTips":"Roofed venue, but expect humidity outdoors."}},
-  {"id":"mercedes","name":"Atlanta Stadium (Mercedes-Benz Stadium)","city":"Atlanta","country":"United States","countryCode":"US","timezone":"America/New_York","capacity":71000,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Hartsfield–Jackson Atlanta International Airport (ATL)","publicTransport":"MARTA rail to GWCC/CNN Center or Vine City.","parking":null,"attractions":"Georgia Aquarium, Centennial Olympic Park, MLK National Historical Park.","food":null,"hotels":null,"safetyTips":"Downtown venue — walking access from many hotels."}},
-  {"id":"sofi","name":"Los Angeles Stadium (SoFi Stadium)","city":"Inglewood","country":"United States","countryCode":"US","timezone":"America/Los_Angeles","capacity":70240,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Los Angeles International Airport (LAX)","publicTransport":"LA Metro K Line plus event shuttles from Downtown Inglewood.","parking":null,"attractions":"Santa Monica, Hollywood, Griffith Observatory.","food":null,"hotels":null,"safetyTips":"Book transport early — LA traffic peaks on matchdays."}},
-  {"id":"lincoln","name":"Philadelphia Stadium (Lincoln Financial Field)","city":"Philadelphia","country":"United States","countryCode":"US","timezone":"America/New_York","capacity":69796,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Philadelphia International Airport (PHL)","publicTransport":"SEPTA Broad Street Line to NRG station.","parking":null,"attractions":"Independence Hall, Liberty Bell, Philadelphia Museum of Art.","food":null,"hotels":null,"safetyTips":"Sports complex area is well signposted from the subway."}},
-  {"id":"lumen","name":"Seattle Stadium (Lumen Field)","city":"Seattle","country":"United States","countryCode":"US","timezone":"America/Los_Angeles","capacity":69000,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Seattle–Tacoma International Airport (SEA)","publicTransport":"Link light rail to Stadium station.","parking":null,"attractions":"Pike Place Market, Space Needle, waterfront.","food":null,"hotels":null,"safetyTips":"Downtown venue — light rail is the easiest option."}},
-  {"id":"levis","name":"San Francisco Bay Area Stadium (Levi's Stadium)","city":"Santa Clara","country":"United States","countryCode":"US","timezone":"America/Los_Angeles","capacity":68500,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"San José Mineta International (SJC) / San Francisco (SFO)","publicTransport":"VTA light rail to Great America station; Caltrain connections.","parking":null,"attractions":"San Francisco sights, Silicon Valley tech landmarks.","food":null,"hotels":null,"safetyTips":"Stadium is in Santa Clara, ~70 km from San Francisco — plan accordingly."}},
-  {"id":"gillette","name":"Boston Stadium (Gillette Stadium)","city":"Foxborough","country":"United States","countryCode":"US","timezone":"America/New_York","capacity":65878,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Boston Logan International Airport (BOS)","publicTransport":"MBTA event trains to Foxboro station on matchdays.","parking":null,"attractions":"Freedom Trail, Fenway area, Harvard/MIT campuses.","food":null,"hotels":null,"safetyTips":"Venue is ~45 km from Boston — check event train schedules."}},
-  {"id":"hardrock","name":"Miami Stadium (Hard Rock Stadium)","city":"Miami Gardens","country":"United States","countryCode":"US","timezone":"America/New_York","capacity":64767,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Miami International Airport (MIA)","publicTransport":"Matchday shuttles and rideshare; limited rail access.","parking":null,"attractions":"South Beach, Wynwood Walls, Everglades tours.","food":null,"hotels":null,"safetyTips":"Afternoon thunderstorms are common in summer."}},
-  {"id":"bmo","name":"Toronto Stadium (BMO Field)","city":"Toronto","country":"Canada","countryCode":"CA","timezone":"America/Toronto","capacity":45736,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Toronto Pearson International Airport (YYZ)","publicTransport":"GO Transit/TTC to Exhibition station.","parking":null,"attractions":"CN Tower, Distillery District, Toronto Islands.","food":null,"hotels":null,"safetyTips":"Exhibition Place fills quickly — arrive early."}},
-  {"id":"bcplace","name":"Vancouver Stadium (BC Place)","city":"Vancouver","country":"Canada","countryCode":"CA","timezone":"America/Vancouver","capacity":54500,"imageUrl":null,"mapUrl":null,"localInfo":{"nearestAirport":"Vancouver International Airport (YVR)","publicTransport":"SkyTrain Expo Line to Stadium–Chinatown station.","parking":null,"attractions":"Stanley Park, Granville Island, Gastown.","food":null,"hotels":null,"safetyTips":"Downtown venue — walkable from most central hotels."}}
+  {
+    "id": "azteca",
+    "name": "Estadio Azteca",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "timezone": "America/Mexico_City",
+    "capacity": 87523,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg/960px-Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Mexico City International Airport (MEX)",
+      "publicTransport": "Tren Ligero light rail to Estadio Azteca station; Metro Line 2 to Tasqueña.",
+      "parking": null,
+      "attractions": "Historic centre (Zócalo), Coyoacán, Xochimilco canals.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Use registered taxis or ride-hail apps; keep valuables out of sight on transit."
+    }
+  },
+  {
+    "id": "bbva",
+    "name": "Estadio BBVA",
+    "city": "Monterrey",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "timezone": "America/Monterrey",
+    "capacity": 53500,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG/960px-Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Monterrey International Airport (MTY)",
+      "publicTransport": "Metrorrey plus matchday shuttle services.",
+      "parking": null,
+      "attractions": "Macroplaza, Fundidora Park, Santa Lucía Riverwalk.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Summer heat can be intense; carry water."
+    }
+  },
+  {
+    "id": "akron",
+    "name": "Estadio Akron",
+    "city": "Guadalajara",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "timezone": "America/Mexico_City",
+    "capacity": 49850,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Estadio_Akron_02-07-2022_cabecera_sur_lado_derecho_%283%29.jpg/960px-Estadio_Akron_02-07-2022_cabecera_sur_lado_derecho_%283%29.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Guadalajara International Airport (GDL)",
+      "publicTransport": "Mi Macro Periférico BRT plus matchday shuttles.",
+      "parking": null,
+      "attractions": "Tlaquepaque, Hospicio Cabañas, Tequila day trips.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Plan extra travel time on matchdays."
+    }
+  },
+  {
+    "id": "metlife",
+    "name": "New York New Jersey Stadium (MetLife Stadium)",
+    "city": "East Rutherford",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/New_York",
+    "capacity": 82500,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Metlife_stadium_%28Aerial_view%29.jpg/960px-Metlife_stadium_%28Aerial_view%29.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Newark Liberty International Airport (EWR)",
+      "publicTransport": "NJ Transit rail to Meadowlands Sports Complex on event days.",
+      "parking": null,
+      "attractions": "Manhattan sights, Liberty State Park, American Dream complex.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Allow extra time for stadium security screening."
+    }
+  },
+  {
+    "id": "att",
+    "name": "Dallas Stadium (AT&T Stadium)",
+    "city": "Arlington",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/Chicago",
+    "capacity": 80000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Arlington_June_2020_4_%28AT%26T_Stadium%29.jpg/960px-Arlington_June_2020_4_%28AT%26T_Stadium%29.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Dallas/Fort Worth International Airport (DFW)",
+      "publicTransport": "Trinity Metro/DART connections plus event shuttles; rideshare zones available.",
+      "parking": null,
+      "attractions": "Arlington Entertainment District, Dallas Arts District.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Texas summer heat — hydrate before kickoff."
+    }
+  },
+  {
+    "id": "arrowhead",
+    "name": "Kansas City Stadium (Arrowhead Stadium)",
+    "city": "Kansas City",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/Chicago",
+    "capacity": 76416,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg/960px-Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Kansas City International Airport (MCI)",
+      "publicTransport": "RideKC buses and matchday express shuttles.",
+      "parking": null,
+      "attractions": "National WWI Museum, Country Club Plaza, KC barbecue trail.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Stadium is outside downtown — plan transport in advance."
+    }
+  },
+  {
+    "id": "nrg",
+    "name": "Houston Stadium (NRG Stadium)",
+    "city": "Houston",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/Chicago",
+    "capacity": 72220,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nrg_stadium.jpg/960px-Nrg_stadium.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "George Bush Intercontinental (IAH) / Hobby (HOU)",
+      "publicTransport": "METRORail Red Line to Stadium Park/Astrodome.",
+      "parking": null,
+      "attractions": "Space Center Houston, Museum District.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Roofed venue, but expect humidity outdoors."
+    }
+  },
+  {
+    "id": "mercedes",
+    "name": "Atlanta Stadium (Mercedes-Benz Stadium)",
+    "city": "Atlanta",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/New_York",
+    "capacity": 71000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg/960px-Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Hartsfield–Jackson Atlanta International Airport (ATL)",
+      "publicTransport": "MARTA rail to GWCC/CNN Center or Vine City.",
+      "parking": null,
+      "attractions": "Georgia Aquarium, Centennial Olympic Park, MLK National Historical Park.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Downtown venue — walking access from many hotels."
+    }
+  },
+  {
+    "id": "sofi",
+    "name": "Los Angeles Stadium (SoFi Stadium)",
+    "city": "Inglewood",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/Los_Angeles",
+    "capacity": 70240,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/SoFi_Stadium_2023.jpg/960px-SoFi_Stadium_2023.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Los Angeles International Airport (LAX)",
+      "publicTransport": "LA Metro K Line plus event shuttles from Downtown Inglewood.",
+      "parking": null,
+      "attractions": "Santa Monica, Hollywood, Griffith Observatory.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Book transport early — LA traffic peaks on matchdays."
+    }
+  },
+  {
+    "id": "lincoln",
+    "name": "Philadelphia Stadium (Lincoln Financial Field)",
+    "city": "Philadelphia",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/New_York",
+    "capacity": 69796,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Lincoln_Financial_Field_%28Aerial_view%29.jpg/960px-Lincoln_Financial_Field_%28Aerial_view%29.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Philadelphia International Airport (PHL)",
+      "publicTransport": "SEPTA Broad Street Line to NRG station.",
+      "parking": null,
+      "attractions": "Independence Hall, Liberty Bell, Philadelphia Museum of Art.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Sports complex area is well signposted from the subway."
+    }
+  },
+  {
+    "id": "lumen",
+    "name": "Seattle Stadium (Lumen Field)",
+    "city": "Seattle",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/Los_Angeles",
+    "capacity": 69000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg/960px-2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Seattle–Tacoma International Airport (SEA)",
+      "publicTransport": "Link light rail to Stadium station.",
+      "parking": null,
+      "attractions": "Pike Place Market, Space Needle, waterfront.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Downtown venue — light rail is the easiest option."
+    }
+  },
+  {
+    "id": "levis",
+    "name": "San Francisco Bay Area Stadium (Levi's Stadium)",
+    "city": "Santa Clara",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/Los_Angeles",
+    "capacity": 68500,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_%2824398261729%29.jpg/960px-Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_%2824398261729%29.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "San José Mineta International (SJC) / San Francisco (SFO)",
+      "publicTransport": "VTA light rail to Great America station; Caltrain connections.",
+      "parking": null,
+      "attractions": "San Francisco sights, Silicon Valley tech landmarks.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Stadium is in Santa Clara, ~70 km from San Francisco — plan accordingly."
+    }
+  },
+  {
+    "id": "gillette",
+    "name": "Boston Stadium (Gillette Stadium)",
+    "city": "Foxborough",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/New_York",
+    "capacity": 65878,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Gillette_Stadium_%28Top_View%29.jpg/960px-Gillette_Stadium_%28Top_View%29.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Boston Logan International Airport (BOS)",
+      "publicTransport": "MBTA event trains to Foxboro station on matchdays.",
+      "parking": null,
+      "attractions": "Freedom Trail, Fenway area, Harvard/MIT campuses.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Venue is ~45 km from Boston — check event train schedules."
+    }
+  },
+  {
+    "id": "hardrock",
+    "name": "Miami Stadium (Hard Rock Stadium)",
+    "city": "Miami Gardens",
+    "country": "United States",
+    "countryCode": "US",
+    "timezone": "America/New_York",
+    "capacity": 64767,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Hard_Rock_Stadium_for_Super_Bowl_LIV_%2849606710103%29.jpg/960px-Hard_Rock_Stadium_for_Super_Bowl_LIV_%2849606710103%29.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Miami International Airport (MIA)",
+      "publicTransport": "Matchday shuttles and rideshare; limited rail access.",
+      "parking": null,
+      "attractions": "South Beach, Wynwood Walls, Everglades tours.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Afternoon thunderstorms are common in summer."
+    }
+  },
+  {
+    "id": "bmo",
+    "name": "Toronto Stadium (BMO Field)",
+    "city": "Toronto",
+    "country": "Canada",
+    "countryCode": "CA",
+    "timezone": "America/Toronto",
+    "capacity": 45736,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Toronto_BMO_Field_in_2024.jpg/960px-Toronto_BMO_Field_in_2024.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Toronto Pearson International Airport (YYZ)",
+      "publicTransport": "GO Transit/TTC to Exhibition station.",
+      "parking": null,
+      "attractions": "CN Tower, Distillery District, Toronto Islands.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Exhibition Place fills quickly — arrive early."
+    }
+  },
+  {
+    "id": "bcplace",
+    "name": "Vancouver Stadium (BC Place)",
+    "city": "Vancouver",
+    "country": "Canada",
+    "countryCode": "CA",
+    "timezone": "America/Vancouver",
+    "capacity": 54500,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/BC_Place_2015_Women%27s_FIFA_World_Cup.jpg/960px-BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
+    "mapUrl": null,
+    "localInfo": {
+      "nearestAirport": "Vancouver International Airport (YVR)",
+      "publicTransport": "SkyTrain Expo Line to Stadium–Chinatown station.",
+      "parking": null,
+      "attractions": "Stanley Park, Granville Island, Gastown.",
+      "food": null,
+      "hotels": null,
+      "safetyTips": "Downtown venue — walkable from most central hotels."
+    }
+  }
 ]
