@@ -5,6 +5,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+  }
+  html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
   }
   body {
     @apply bg-slate-50 text-slate-900 antialiased transition-colors duration-200 dark:bg-night-950 dark:text-slate-100;

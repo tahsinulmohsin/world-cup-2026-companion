@@ -20,7 +20,7 @@ export default function FilterBar({
   className?: string;
 }) {
   return (
-    <div className={cn("flex gap-2 overflow-x-auto pb-1 [-webkit-overflow-scrolling:touch]", className)} role="tablist">
+    <div className={cn("flex gap-2 overflow-x-auto pb-1 [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden", className)} role="tablist">
       {options.map((o) => (
         <button
           key={o.id}

@@ -15,13 +15,13 @@ export default function Header() {
   const { t } = useTranslation();
 
   return (
-    <header className="sticky top-0 z-30 bg-transparent">
+    <header className="sticky top-0 z-30 border-b border-white/10 bg-night-950/80 backdrop-blur-xl dark:bg-night-950/80">
       <OfflineIndicator />
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
         <Link href="/" className="flex items-center gap-2">
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pitch-700 text-lg dark:bg-pitch-500" aria-hidden>⚽</span>
-          <span className="font-display text-lg font-extrabold tracking-tight">
-            WC26 <span className="text-pitch-600 dark:text-pitch-400">Companion</span>
+          <span className="font-display text-lg font-extrabold tracking-tight text-white">
+            WC26 <span className="text-pitch-400">Companion</span>
           </span>
         </Link>
         <div className="hidden items-center gap-2 md:flex">
@@ -31,7 +31,7 @@ export default function Header() {
         </div>
         <div className="md:hidden"><ThemeToggle /></div>
       </div>
-      <nav aria-label="Main" className="mx-auto max-w-6xl overflow-x-auto px-4 pb-2 [-webkit-overflow-scrolling:touch]">
+      <nav aria-label="Main" className="mx-auto max-w-6xl overflow-x-auto px-4 pb-2 [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <ul className="flex gap-1">
           {NAV_ITEMS.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
@@ -44,7 +44,7 @@ export default function Header() {
                     "block whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-pitch-500",
                     active
                       ? "bg-pitch-700 text-white dark:bg-pitch-500 dark:text-night-950"
-                      : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-night-800"
+                      : "text-slate-300 hover:bg-white/10 hover:text-white dark:text-slate-300 dark:hover:bg-night-800"
                   )}
                 >
                   {t(item.labelKey)}
