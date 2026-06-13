@@ -44,7 +44,7 @@ export async function GET() {
       `DTEND:${formatDate(dtEnd)}`,
       `SUMMARY:${homeTeam} vs ${awayTeam}`,
       `LOCATION:${stadium}`,
-      `DESCRIPTION:Match ${match.matchNumber} - ${match.stage}\\nView details: https://world-cup-2026-companion-xi.vercel.app/matches/${match.id}`,
+      `DESCRIPTION:Match ${match.matchNumber} - ${match.round}\\nView details: https://world-cup-2026-companion-xi.vercel.app/matches/${match.id}`,
       "END:VEVENT"
     );
   }
