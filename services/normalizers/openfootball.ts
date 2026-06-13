@@ -102,6 +102,11 @@ function slug(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
 
+/** Resolve a national-team name to [id, shortName, flag], or null for placeholders. */
+export function resolveTeamMeta(name: string): [string, string, string] | null {
+  return TEAMS[name] ?? null;
+}
+
 function teamId(name: string | undefined): string | null {
   if (!name) return null;
   return TEAMS[name]?.[0] ?? null; // placeholders ("1A", "W101", "UEFA Path…") → null

@@ -28,6 +28,8 @@ export interface OfficialSourceConfig<TData> {
   fallback: () => TData | null;
   /** Optional license note shown in the UI attribution. */
   licenseNote?: string;
+  /** Optional extra request headers (e.g. API keys read from env vars). */
+  headers?: () => Record<string, string>;
   /** Count items for the admin monitor. */
   count?: (data: TData) => number;
 }
@@ -129,7 +131,10 @@ export function createOfficialSource<TData>(
       const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
       const res = await fetch(url, {
         signal: controller.signal,
-        headers: { Accept: "application/json, application/xml, text/xml;q=0.9, */*;q=0.8" },
+        headers: {
+          Accept: "application/json, application/xml, text/xml;q=0.9, */*;q=0.8",
+          ...(cfg.headers?.() ?? {})
+        },
         // Next.js data cache as a second layer:
         next: { revalidate: Math.floor(cfg.ttlMs / 1000) }
       });
