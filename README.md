@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.6.3
+- **Version:** v1.6.4
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -171,7 +171,11 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.6.3** (git tag `v1.6.3`).
+Semantic versioning. Current release: **v1.6.4** (git tag `v1.6.4`).
+
+**v1.6.4** — Tickets page shows upcoming-match availability
+- The Tickets "Availability" box was a permanent placeholder ("appears here when the official ticketing feed is connected"). It now lists the next 12 upcoming matches from the official **fixtures** feed — teams, date, and venue — each with a direct "Buy via FIFA ↗" link to the official ticketing portal
+- Live seat counts still require FIFA's official ticketing feed and are never invented; the list reflects only honest, sourced fixture data and falls back to a clear message when no upcoming matches exist
 
 **v1.6.3** — Match page Team comparison populated from standings
 - The match detail "Team comparison" table showed "Not available from official source" for every row because team metadata (ranking/coach/form) is empty in the live data feed. It now draws from official **group standings**: group, group position, matches played, W-D-L record, goals for/against, goal difference, points, and recent form, with team metadata (best World Cup, coach, ranking) as a fallback
