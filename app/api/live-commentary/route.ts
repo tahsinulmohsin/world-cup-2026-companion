@@ -82,10 +82,15 @@ export async function GET() {
       homeScore: homeCompetitor?.score,
       awayScore: awayCompetitor?.score,
     },
-    commentary: (summary?.commentary ?? []).slice(0, 15).map((c: any) => ({
-      id: c.play?.id ?? c.sequence,
-      time: c.time?.displayValue ?? "",
-      text: c.text ?? "",
-    })),
+    // ESPN returns commentary oldest-first. Show the most recent 15 events,
+    // newest first, so the latest action is at the top of the feed.
+    commentary: (summary?.commentary ?? [])
+      .slice(-15)
+      .reverse()
+      .map((c: any) => ({
+        id: c.play?.id ?? c.sequence,
+        time: c.time?.displayValue ?? "",
+        text: c.text ?? "",
+      })),
   });
 }
