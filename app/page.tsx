@@ -29,6 +29,16 @@ function seededShuffle<T>(items: T[], seed: number): T[] {
   return arr;
 }
 
+/** Alternate items from two lists (a, b, a, b, …), appending any remainder. */
+function interleave<T>(a: T[], b: T[]): T[] {
+  const out: T[] = [];
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    if (i < a.length) out.push(a[i]);
+    if (i < b.length) out.push(b[i]);
+  }
+  return out;
+}
+
 export default async function HomePage() {
   const [fixturesRes, teamsRes, stadiumsRes, newsRes, squadsRes, partiesRes] = await Promise.all([
     getFixtures(), getTeams(), getStadiums(), getNews(), getSquads(), getWatchParties()
@@ -38,13 +48,22 @@ export default async function HomePage() {
   const teams = teamsRes.data ?? [];
   const stadiums = Object.fromEntries((stadiumsRes.data ?? []).map((s) => [s.id, s]));
 
-  // Daily-rotating slideshow of venue photos (Wikimedia Commons, via stadium data).
-  const heroImages: HeroImage[] = seededShuffle(
+  // Daily-rotating hero slideshow: venue photos + player portraits
+  // (Wikimedia Commons, via stadium/squad data), interleaved so it alternates.
+  const seed = daySeed();
+  const venueImages: HeroImage[] = seededShuffle(
     (stadiumsRes.data ?? [])
       .filter((s) => s.imageUrl)
       .map((s) => ({ url: s.imageUrl as string, caption: `${s.name} · ${s.city}` })),
-    daySeed()
-  ).slice(0, 8);
+    seed
+  ).slice(0, 6);
+  const playerImages: HeroImage[] = seededShuffle(
+    (squadsRes.data ?? [])
+      .filter((p) => p.imageUrl)
+      .map((p) => ({ url: p.imageUrl as string, caption: `${p.name}${p.nationality ? ` · ${p.nationality}` : ""}` })),
+    seed
+  ).slice(0, 6);
+  const heroImages: HeroImage[] = interleave(venueImages, playerImages);
   const knockout = fixtures.filter((f) => f.isKnockout).slice(0, 8);
   const topScorers = (squadsRes.data ?? [])
     .filter((p) => p.goals !== null && p.goals > 0)

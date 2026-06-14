@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.6.0
+- **Version:** v1.6.1
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -171,7 +171,11 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.6.0** (git tag `v1.6.0`).
+Semantic versioning. Current release: **v1.6.1** (git tag `v1.6.1`).
+
+**v1.6.1** — Hero slideshow adds player portraits
+- The home hero slideshow now interleaves daily-shuffled **player portraits** (from squad data / Wikipedia) with the venue photos, alternating venue → player → venue behind the brand gradient
+- Captions show the player name and nationality alongside venue captions
 
 **v1.6.0** — Home hero venue slideshow
 - Added a cross-fading background slideshow of World Cup 2026 venue photos behind the home hero's green gradient, sourced from the existing stadium data (Wikimedia Commons), with a small venue caption
