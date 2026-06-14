@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.6.2
+- **Version:** v1.6.3
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -171,7 +171,12 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.6.2** (git tag `v1.6.2`).
+Semantic versioning. Current release: **v1.6.3** (git tag `v1.6.3`).
+
+**v1.6.3** — Match page Team comparison populated from standings
+- The match detail "Team comparison" table showed "Not available from official source" for every row because team metadata (ranking/coach/form) is empty in the live data feed. It now draws from official **group standings**: group, group position, matches played, W-D-L record, goals for/against, goal difference, points, and recent form, with team metadata (best World Cup, coach, ranking) as a fallback
+- Group and group position populate even before kickoff; the full record fills in as official results come in
+- The live timeline, live stats, head-to-head and lineups panels continue to show honest "not available yet" states until official live match-centre data exists for the fixture (these are intentionally never invented)
 
 **v1.6.2** — Players shown as a framed hero portrait card
 - Player portraits are now a distinct cross-fading **portrait card** on the right side of the home hero (framed, ringed, with a "Star player" badge and name/nationality caption) instead of being blended into the background

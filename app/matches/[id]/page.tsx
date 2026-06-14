@@ -17,7 +17,8 @@ import FanReactionPanel from "@/components/matches/FanReactionPanel";
 import WatchSectionClient from "./WatchSectionClient";
 import TeamBadge from "@/components/teams/TeamBadge";
 import PlayerList from "@/components/players/PlayerList";
-import { getFixture, getMatchCentre, getSquads, getStadium, getTeams } from "@/services/sync/syncService";
+import { getFixture, getMatchCentre, getSquads, getStadium, getStandings, getTeams } from "@/services/sync/syncService";
+import { sortGroup } from "@/services/normalizers/standings";
 
 export const revalidate = 60;
 
@@ -34,16 +35,32 @@ export default async function MatchDetailsPage({ params }: { params: { id: strin
   const fixture = await getFixture(params.id);
   if (!fixture) notFound();
 
-  const [stadium, teamsRes, squadsRes, centre] = await Promise.all([
+  const [stadium, teamsRes, squadsRes, standingsRes, centre] = await Promise.all([
     fixture.stadiumId ? getStadium(fixture.stadiumId) : Promise.resolve(null),
     getTeams(),
     getSquads(),
+    getStandings(),
     getMatchCentre(fixture.id)
   ]);
 
   const teams = teamsRes.data ?? [];
   const home = teams.find((t) => t.id === fixture.homeTeamId) ?? null;
   const away = teams.find((t) => t.id === fixture.awayTeamId) ?? null;
+
+  // Standings give the team-comparison table real, sourced numbers (record,
+  // goals, form, group position) for group-stage matches.
+  const standings = standingsRes.data ?? [];
+  const homeStanding = standings.find((s) => s.teamId === fixture.homeTeamId) ?? null;
+  const awayStanding = standings.find((s) => s.teamId === fixture.awayTeamId) ?? null;
+  const positionIn = (s: typeof homeStanding) => {
+    if (!s) return null;
+    const ordered = sortGroup(standings.filter((row) => row.group === s.group));
+    const idx = ordered.findIndex((row) => row.teamId === s.teamId);
+    return idx >= 0 ? idx + 1 : null;
+  };
+  const homePosition = positionIn(homeStanding);
+  const awayPosition = positionIn(awayStanding);
+
   const squads = squadsRes.data ?? [];
   const homeSquad = squads.filter((p) => p.teamId === fixture.homeTeamId);
   const awaySquad = squads.filter((p) => p.teamId === fixture.awayTeamId);
@@ -97,7 +114,14 @@ export default async function MatchDetailsPage({ params }: { params: { id: strin
           <LiveStatsPanel stats={centre?.stats ?? null} />
         </Section>
         <Section title="Team comparison">
-          <TeamComparisonPanel home={home} away={away} />
+          <TeamComparisonPanel
+            home={home}
+            away={away}
+            homeStanding={homeStanding}
+            awayStanding={awayStanding}
+            homePosition={homePosition}
+            awayPosition={awayPosition}
+          />
         </Section>
         <Section title="Head-to-head">
           <HeadToHeadPanel h2h={centre?.headToHead ?? null} />
