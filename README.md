@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.5.1
+- **Version:** v1.6.0
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -171,7 +171,11 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.5.1** (git tag `v1.5.1`).
+Semantic versioning. Current release: **v1.6.0** (git tag `v1.6.0`).
+
+**v1.6.0** — Home hero venue slideshow
+- Added a cross-fading background slideshow of World Cup 2026 venue photos behind the home hero's green gradient, sourced from the existing stadium data (Wikimedia Commons), with a small venue caption
+- Images and their order are chosen by a daily deterministic seed (`daySeed` + seeded Fisher–Yates shuffle), so the slideshow refreshes every day; the brand gradient is layered semi-transparently on top so the headline stays readable
 
 **v1.5.1** — Fix home page live commentary showing only the opening minutes
 - The Live Match Coverage feed showed the *first* 15 commentary events (lineups, kickoff, minutes 1–6) even for finished/in-progress matches, because ESPN returns commentary oldest-first and the API sliced `[0, 15]`
