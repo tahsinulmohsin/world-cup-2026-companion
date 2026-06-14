@@ -3,6 +3,7 @@ import Countdown from "@/components/home/Countdown";
 import HomeMatches from "./HomeMatches";
 import LiveCommentary from "@/components/home/LiveCommentary";
 import HeroSlideshow, { type HeroImage } from "@/components/home/HeroSlideshow";
+import HeroPlayerCard, { type HeroPlayer } from "@/components/home/HeroPlayerCard";
 import NewsCard from "@/components/news/NewsCard";
 import Leaderboard from "@/components/stats/Leaderboard";
 import ErrorState from "@/components/ui/ErrorState";
@@ -29,16 +30,6 @@ function seededShuffle<T>(items: T[], seed: number): T[] {
   return arr;
 }
 
-/** Alternate items from two lists (a, b, a, b, …), appending any remainder. */
-function interleave<T>(a: T[], b: T[]): T[] {
-  const out: T[] = [];
-  for (let i = 0; i < Math.max(a.length, b.length); i++) {
-    if (i < a.length) out.push(a[i]);
-    if (i < b.length) out.push(b[i]);
-  }
-  return out;
-}
-
 export default async function HomePage() {
   const [fixturesRes, teamsRes, stadiumsRes, newsRes, squadsRes, partiesRes] = await Promise.all([
     getFixtures(), getTeams(), getStadiums(), getNews(), getSquads(), getWatchParties()
@@ -48,22 +39,21 @@ export default async function HomePage() {
   const teams = teamsRes.data ?? [];
   const stadiums = Object.fromEntries((stadiumsRes.data ?? []).map((s) => [s.id, s]));
 
-  // Daily-rotating hero slideshow: venue photos + player portraits
-  // (Wikimedia Commons, via stadium/squad data), interleaved so it alternates.
+  // Daily-rotating hero visuals (Wikimedia Commons, via stadium/squad data):
+  // venue photos as the background slideshow, player portraits as a framed card.
   const seed = daySeed();
-  const venueImages: HeroImage[] = seededShuffle(
+  const heroImages: HeroImage[] = seededShuffle(
     (stadiumsRes.data ?? [])
       .filter((s) => s.imageUrl)
       .map((s) => ({ url: s.imageUrl as string, caption: `${s.name} · ${s.city}` })),
     seed
-  ).slice(0, 6);
-  const playerImages: HeroImage[] = seededShuffle(
+  ).slice(0, 8);
+  const heroPlayers: HeroPlayer[] = seededShuffle(
     (squadsRes.data ?? [])
       .filter((p) => p.imageUrl)
-      .map((p) => ({ url: p.imageUrl as string, caption: `${p.name}${p.nationality ? ` · ${p.nationality}` : ""}` })),
+      .map((p) => ({ url: p.imageUrl as string, name: p.name, sub: p.nationality ?? undefined })),
     seed
-  ).slice(0, 6);
-  const heroImages: HeroImage[] = interleave(venueImages, playerImages);
+  ).slice(0, 8);
   const knockout = fixtures.filter((f) => f.isKnockout).slice(0, 8);
   const topScorers = (squadsRes.data ?? [])
     .filter((p) => p.goals !== null && p.goals > 0)
@@ -81,20 +71,23 @@ export default async function HomePage() {
         {/* Extra left darkening so the headline stays readable over bright photos */}
         <div className="absolute inset-0 bg-gradient-to-r from-pitch-950/80 via-pitch-950/20 to-transparent" />
 
-        <div className="relative z-10 p-6 sm:p-10">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-trophy-400">North America · 11 June – 19 July 2026</p>
-          <h1 className="mt-2 max-w-xl font-display text-3xl font-extrabold leading-tight sm:text-4xl">
-            Your complete companion for the 2026 World Cup
-          </h1>
-          <p className="mt-2 max-w-lg text-sm text-pitch-100">
-            48 teams, 16 stadiums, 104 matches — fixtures, live scores, standings, reminders and where to watch, all
-            from official sources with attribution.
-          </p>
-          <div className="mt-6"><Countdown /></div>
-          <div className="mt-6 flex flex-wrap gap-2">
-            <Link href="/fixtures" className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-pitch-900 transition hover:bg-pitch-50">All fixtures</Link>
-            <Link href="/my-world-cup" className="rounded-full bg-white/10 px-4 py-2 text-sm font-semibold ring-1 ring-inset ring-white/30 transition hover:bg-white/20">Build My World Cup ⭐</Link>
+        <div className="relative z-10 flex items-center justify-between gap-6 p-6 sm:p-10">
+          <div className="min-w-0">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-trophy-400">North America · 11 June – 19 July 2026</p>
+            <h1 className="mt-2 max-w-xl font-display text-3xl font-extrabold leading-tight sm:text-4xl">
+              Your complete companion for the 2026 World Cup
+            </h1>
+            <p className="mt-2 max-w-lg text-sm text-pitch-100">
+              48 teams, 16 stadiums, 104 matches — fixtures, live scores, standings, reminders and where to watch, all
+              from official sources with attribution.
+            </p>
+            <div className="mt-6"><Countdown /></div>
+            <div className="mt-6 flex flex-wrap gap-2">
+              <Link href="/fixtures" className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-pitch-900 transition hover:bg-pitch-50">All fixtures</Link>
+              <Link href="/my-world-cup" className="rounded-full bg-white/10 px-4 py-2 text-sm font-semibold ring-1 ring-inset ring-white/30 transition hover:bg-white/20">Build My World Cup ⭐</Link>
+            </div>
           </div>
+          <HeroPlayerCard players={heroPlayers} />
         </div>
       </section>
 
