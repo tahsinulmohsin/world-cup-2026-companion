@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.4.0
+- **Version:** v1.4.1
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -171,7 +171,11 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.4.0** (git tag `v1.4.0`).
+Semantic versioning. Current release: **v1.4.1** (git tag `v1.4.1`).
+
+**v1.4.1** — Fix "Add all to Google Calendar" on Fixtures page
+- The button used a `webcal://` protocol link which opens native calendar apps, not Google Calendar. Changed to `https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2F...` — the correct URL format for subscribing to an external calendar feed in Google Calendar.
+
 
 **v1.4.0** — Bug fixes: live commentary, watch party modal, Google Calendar
 - Fix live commentary stopping after ~12 minutes: removed `next: { revalidate }` caching from the Route Handler (replaced with `force-dynamic` + `cache: 'no-store'`), added per-fetch 4s AbortController timeouts, added fallback league slug (`fifa.world-cup` → `fifa.world`) so the ESPN endpoint resolves during the tournament
