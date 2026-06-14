@@ -1,6 +1,6 @@
 {
   "name": "world-cup-2026-companion",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "private": true,
   "description": "A modern World Cup 2026 companion web app with official-source fixtures, standings, live scores, reminders, where-to-watch options, stats, travel guides, watch parties, and personalized team tracking.",
   "scripts": {
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "cheerio": "^1.2.0",
+    "html-to-image": "^1.11.13",
     "next": "14.2.15",
     "react": "18.3.1",
     "react-dom": "18.3.1"

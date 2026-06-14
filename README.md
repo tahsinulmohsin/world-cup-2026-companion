@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.4.1
+- **Version:** v1.5.0
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -171,7 +171,12 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.4.1** (git tag `v1.4.1`).
+Semantic versioning. Current release: **v1.5.0** (git tag `v1.5.0`).
+
+**v1.5.0** — Wall chart image download & share
+- Implemented the previously "coming soon" **Download as image** button: renders the wall chart (groups, knockout path, winner) to a high-resolution (2×) PNG via `html-to-image`, with a theme-aware background
+- Implemented the **Share wall chart** button: uses the Web Share API to share the rendered PNG as a file where supported, falls back to sharing the page URL, then to copying the link to the clipboard
+- Both actions show inline busy/feedback states; cancelled share dialogs are handled gracefully
 
 **v1.4.1** — Fix "Add all to Google Calendar" on Fixtures page
 - The button used a `webcal://` protocol link which opens native calendar apps, not Google Calendar. Changed to `https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2F...` — the correct URL format for subscribing to an external calendar feed in Google Calendar.
