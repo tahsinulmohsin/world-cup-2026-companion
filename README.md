@@ -51,7 +51,39 @@ Next.js 14 (App Router) · TypeScript (strict) · Tailwind CSS · Vercel Cron Jo
 
 ## Screenshots
 
-_Add screenshots here (home, fixtures, match details, dark mode, mobile)._
+> Captured in dark mode at 1280px. Regenerate with `node scripts/screenshots.mjs` (needs the prod server running and `playwright` installed).
+
+| Home | Fixtures |
+| --- | --- |
+| ![Home](docs/screenshots/home.png) | ![Fixtures](docs/screenshots/fixtures.png) |
+
+| Groups | Knockout |
+| --- | --- |
+| ![Groups](docs/screenshots/groups.png) | ![Knockout](docs/screenshots/knockout.png) |
+
+| Teams | Players |
+| --- | --- |
+| ![Teams](docs/screenshots/teams.png) | ![Players](docs/screenshots/players.png) |
+
+| Stadiums | Stats |
+| --- | --- |
+| ![Stadiums](docs/screenshots/stadiums.png) | ![Stats](docs/screenshots/stats.png) |
+
+| News | Travel |
+| --- | --- |
+| ![News](docs/screenshots/news.png) | ![Travel](docs/screenshots/travel.png) |
+
+| Watch Parties | Wall Chart |
+| --- | --- |
+| ![Watch Parties](docs/screenshots/watch-parties.png) | ![Wall Chart](docs/screenshots/wall-chart.png) |
+
+| My World Cup | Reminders |
+| --- | --- |
+| ![My World Cup](docs/screenshots/my-world-cup.png) | ![Reminders](docs/screenshots/reminders.png) |
+
+| Settings | Tickets |
+| --- | --- |
+| ![Settings](docs/screenshots/settings.png) | ![Tickets](docs/screenshots/tickets.png) |
 
 ## Folder structure
 
