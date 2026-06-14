@@ -7,7 +7,7 @@ import EmptyState from "@/components/ui/EmptyState";
 import { useLocalWatchParties, type LocalWatchParty } from "@/hooks/useLocalWatchParties";
 import type { WatchParty } from "@/types";
 
-function AddPartyModal({ open, onClose, onSave }: { open: boolean; onClose: () => void; onSave: (party: Omit<LocalWatchParty, "id" | "createdAt">) => void }) {
+function AddPartyModal({ onClose, onSave }: { onClose: () => void; onSave: (party: Omit<LocalWatchParty, "id" | "createdAt">) => void }) {
   const [title, setTitle] = useState("");
   const [venue, setVenue] = useState("");
   const [city, setCity] = useState("");
@@ -17,12 +17,15 @@ function AddPartyModal({ open, onClose, onSave }: { open: boolean; onClose: () =
   const [description, setDescription] = useState("");
   const [kind, setKind] = useState<LocalWatchParty["kind"]>("community");
   const [mapUrl, setMapUrl] = useState("");
-
-  if (!open) return null;
+  const [error, setError] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!title.trim() || !venue.trim() || !city.trim()) return;
+    if (!title.trim() || !venue.trim() || !city.trim()) {
+      setError("Event name, venue, and city are required.");
+      return;
+    }
+    setError("");
     onSave({
       title: title.trim(),
       venue: venue.trim(),
@@ -34,8 +37,6 @@ function AddPartyModal({ open, onClose, onSave }: { open: boolean; onClose: () =
       kind,
       mapUrl: mapUrl.trim() || null,
     });
-    // Reset form
-    setTitle(""); setVenue(""); setCity(""); setCountry(""); setDateTime(""); setOrganizer(""); setDescription(""); setKind("community"); setMapUrl("");
     onClose();
   };
 
@@ -48,6 +49,7 @@ function AddPartyModal({ open, onClose, onSave }: { open: boolean; onClose: () =
         <h2 className="font-display text-xl font-bold">Add a Watch Party</h2>
         <p className="mt-1 text-sm text-slate-500">Share where you&apos;re watching with the community.</p>
 
+        {error && <p className="mt-2 rounded-lg bg-red-50 px-3 py-2 text-sm text-red-600 dark:bg-red-900/20 dark:text-red-400">{error}</p>}
         <form onSubmit={handleSubmit} className="mt-5 space-y-4">
           <div>
             <label className="mb-1 block text-sm font-medium">Event name <span className="text-red-500">*</span></label>
@@ -201,7 +203,7 @@ export default function WatchPartiesClient({ parties }: { parties: WatchParty[] 
         })}
       </div>
 
-      <AddPartyModal open={showAdd} onClose={() => setShowAdd(false)} onSave={addParty} />
+      {showAdd && <AddPartyModal onClose={() => setShowAdd(false)} onSave={addParty} />}
     </div>
   );
 }
