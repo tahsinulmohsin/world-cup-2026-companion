@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.7.0
+- **Version:** v1.7.1
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -204,7 +204,10 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.7.0** (git tag `v1.7.0`).
+Semantic versioning. Current release: **v1.7.1** (git tag `v1.7.1`).
+
+**v1.7.1** — Watch Parties source label
+- Replaced the "Source: Official source unavailable" badge on the Watch Parties page header with a neutral **"Community Reported Watch Parties"** label (the page is community-driven). The official-source badge still shows if a real official feed is ever configured
 
 **v1.7.0** — Shared community watch parties
 - Watch parties added via "Add Watch Party" were stored in `localStorage`, so they only ever showed on the author's own device — never to other users. They can now be **shared across all visitors** via a backend KV store
