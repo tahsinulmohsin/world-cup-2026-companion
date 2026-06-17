@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.6.4
+- **Version:** v1.7.0
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -138,6 +138,7 @@ See `.env.example`. All `OFFICIAL_*_URL` variables point at official endpoints/f
 | `OFFICIAL_NEWS_RSS_URL` | Official RSS/JSON news feed |
 | `OFFICIAL_STADIUMS_URL`, `OFFICIAL_TRAVEL_URL`, `OFFICIAL_WATCH_PARTIES_URL`, `OFFICIAL_TICKETS_URL` | Venue, travel, fan-event, ticketing feeds |
 | `FOOTBALL_DATA_API_KEY` | [football-data.org](https://www.football-data.org) free-tier API key for live scores/standings overlay |
+| `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Redis-style KV store (Vercel KV or Upstash) that makes user-submitted **community watch parties shared across all visitors**. Without it, watch parties stay per-device (localStorage). Upstash aliases `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` also work. |
 | `WEATHER_API_KEY`, `MAPS_API_KEY` | Optional, only if their terms allow |
 | `ADMIN_PASSWORD` | Enables `/admin` + admin API |
 | `CRON_SECRET` | Authenticates Vercel cron calls |
@@ -203,7 +204,13 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.6.4** (git tag `v1.6.4`).
+Semantic versioning. Current release: **v1.7.0** (git tag `v1.7.0`).
+
+**v1.7.0** — Shared community watch parties
+- Watch parties added via "Add Watch Party" were stored in `localStorage`, so they only ever showed on the author's own device — never to other users. They can now be **shared across all visitors** via a backend KV store
+- New `GET`/`POST` `/api/watch-parties` route backed by `services/community/watchPartyStore.ts`, which talks to a Redis-style KV store (Vercel KV or Upstash) over its REST API with plain `fetch` — no new dependency. Server-side validation, field length caps, `http(s)`-only map links, and a 200-item cap
+- The Watch Parties page loads shared parties on mount, posts new ones to the API (refreshing the list so they appear immediately), and labels them with a **"Community"** badge
+- Graceful fallback: when no KV store is configured, the app keeps the previous per-device localStorage behaviour and clearly tells the user their party is local-only. Configure with `KV_REST_API_URL` / `KV_REST_API_TOKEN` (or Upstash equivalents) — see Environment variables
 
 **v1.6.4** — Tickets page shows upcoming-match availability
 - The Tickets "Availability" box was a permanent placeholder ("appears here when the official ticketing feed is connected"). It now lists the next 12 upcoming matches from the official **fixtures** feed — teams, date, and venue — each with a direct "Buy via FIFA ↗" link to the official ticketing portal
