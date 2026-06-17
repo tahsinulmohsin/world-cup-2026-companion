@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.7.1
+- **Version:** v1.7.2
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -204,7 +204,10 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.7.1** (git tag `v1.7.1`).
+Semantic versioning. Current release: **v1.7.2** (git tag `v1.7.2`).
+
+**v1.7.2** — Social share preview (Open Graph / Twitter card)
+- Added Open Graph and Twitter `summary_large_image` metadata in `app/layout.tsx` with `metadataBase`, so links shared on social media / chat apps show a branded preview card (`public/og-image.png`, 1920×1080) instead of a bare URL
 
 **v1.7.1** — Watch Parties source label
 - Replaced the "Source: Official source unavailable" badge on the Watch Parties page header with a neutral **"Community Reported Watch Parties"** label (the page is community-driven). The official-source badge still shows if a real official feed is ever configured
