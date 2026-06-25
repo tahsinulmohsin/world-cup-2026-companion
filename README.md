@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.7.2
+- **Version:** v1.8.0
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -24,6 +24,7 @@ This is a **completely vibe coded project**.
 - 📅 Full fixtures page: search + filters (date scope, team, group, round, stadium, host country, status, favorites, importance), spoiler-free toggle
 - 🎫 Signature "stadium ticket" match cards with where-to-watch, notify-me, calendar and prediction actions
 - 🔍 Match details: timeline, live stats, team comparison, head-to-head, squads, lineups, sourced-data-only preview, highlights links, player of the match, fan reactions
+- 🔀 Concurrent match switcher: when multiple matches share the same kickoff time, a horizontal pill strip lets you hop between them without leaving the match detail view
 - 📺 Where to watch: country selector, official rights-holder data only, clear "not available yet" states
 - 📊 Groups & standings with official tiebreakers, qualification highlighting and team links
 - 🏆 Visual knockout bracket (R32 → Final) with spoiler-free support
@@ -204,7 +205,12 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.7.2** (git tag `v1.7.2`).
+Semantic versioning. Current release: **v1.8.0** (git tag `v1.8.0`).
+
+**v1.8.0** — Concurrent match switcher
+- Added a **concurrent match switcher** on the match detail page (`/matches/[id]`): when multiple matches share the same kickoff time (common on final group-stage matchdays and some knockout rounds), a horizontal pill strip appears between the hero and watch sections, letting users switch between simultaneous matches without navigating back to the fixtures list
+- Shows team badges, short names, live scores (or "vs" for upcoming), a red pulse indicator for live matches, and auto-scrolls to the current match on load
+- New `ConcurrentMatchSwitcher` client component, `scrollbar-none` CSS utility, and server-side concurrent fixture filtering
 
 **v1.7.2** — Social share preview (Open Graph / Twitter card)
 - Added Open Graph and Twitter `summary_large_image` metadata in `app/layout.tsx` with `metadataBase`, so links shared on social media / chat apps show a branded preview card (`public/og-image.png`, 1920×1080) instead of a bare URL

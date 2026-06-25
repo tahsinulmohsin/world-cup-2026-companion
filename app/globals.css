@@ -48,3 +48,13 @@
   .ticket-divider::before { left: -8px; }
   .ticket-divider::after { right: -8px; }
 }
+
+@layer utilities {
+  .scrollbar-none {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+}

@@ -14,10 +14,11 @@ import LiveStatsPanel from "@/components/matches/LiveStatsPanel";
 import TeamComparisonPanel from "@/components/matches/TeamComparisonPanel";
 import HeadToHeadPanel from "@/components/matches/HeadToHeadPanel";
 import FanReactionPanel from "@/components/matches/FanReactionPanel";
+import ConcurrentMatchSwitcher from "@/components/matches/ConcurrentMatchSwitcher";
 import WatchSectionClient from "./WatchSectionClient";
 import TeamBadge from "@/components/teams/TeamBadge";
 import PlayerList from "@/components/players/PlayerList";
-import { getFixture, getMatchCentre, getSquads, getStadium, getStandings, getTeams } from "@/services/sync/syncService";
+import { getFixture, getFixtures, getMatchCentre, getSquads, getStadium, getStandings, getTeams } from "@/services/sync/syncService";
 import { sortGroup } from "@/services/normalizers/standings";
 
 export const revalidate = 60;
@@ -35,17 +36,25 @@ export default async function MatchDetailsPage({ params }: { params: { id: strin
   const fixture = await getFixture(params.id);
   if (!fixture) notFound();
 
-  const [stadium, teamsRes, squadsRes, standingsRes, centre] = await Promise.all([
+  const [stadium, teamsRes, squadsRes, standingsRes, centre, fixturesRes] = await Promise.all([
     fixture.stadiumId ? getStadium(fixture.stadiumId) : Promise.resolve(null),
     getTeams(),
     getSquads(),
     getStandings(),
-    getMatchCentre(fixture.id)
+    getMatchCentre(fixture.id),
+    getFixtures()
   ]);
 
   const teams = teamsRes.data ?? [];
+  const teamMap = Object.fromEntries(teams.map((t) => [t.id, t]));
   const home = teams.find((t) => t.id === fixture.homeTeamId) ?? null;
   const away = teams.find((t) => t.id === fixture.awayTeamId) ?? null;
+
+  // Find all matches at the same kickoff time for the concurrent match switcher
+  const allFixtures = fixturesRes.data ?? [];
+  const concurrentFixtures = allFixtures
+    .filter((f) => f.dateTimeUTC === fixture.dateTimeUTC)
+    .sort((a, b) => (a.matchNumber ?? 0) - (b.matchNumber ?? 0));
 
   // Standings give the team-comparison table real, sourced numbers (record,
   // goals, form, group position) for group-stage matches.
@@ -103,6 +112,12 @@ export default async function MatchDetailsPage({ params }: { params: { id: strin
           <LastUpdatedBadge iso={fixture.sourceMeta.fetchedAt} />
         </div>
       </section>
+
+      <ConcurrentMatchSwitcher
+        currentFixtureId={fixture.id}
+        concurrentFixtures={concurrentFixtures}
+        teams={teamMap}
+      />
 
       <WatchSectionClient />
 
