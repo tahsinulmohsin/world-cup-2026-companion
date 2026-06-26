@@ -62,7 +62,7 @@ export default async function HomePage() {
     .map((p) => ({ label: p.name, sub: p.nationality ?? undefined, value: p.goals ?? 0 }));
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-6 sm:space-y-10">
       <section className="relative overflow-hidden rounded-3xl bg-pitch-900 text-white">
         {/* Daily venue-photo slideshow behind the gradient */}
         <HeroSlideshow images={heroImages} />

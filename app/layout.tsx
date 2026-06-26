@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={`${display.variable} ${body.variable} font-body`}>
         <Header />
-        <main className="mx-auto w-full max-w-6xl px-4 py-6">{children}</main>
+        <main className="mx-auto w-full max-w-6xl px-3 py-4 sm:px-4 sm:py-6">{children}</main>
         <Footer />
         <SWRegister />
         <PWAInstallPrompt />
