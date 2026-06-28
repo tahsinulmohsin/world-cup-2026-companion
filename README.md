@@ -6,7 +6,7 @@ A modern, responsive, production-ready companion web app for the FIFA World Cup 
 
 - **Live demo:** https://world-cup-2026-companion-xi.vercel.app
 - **Repository:** https://github.com/tahsinulmohsin/world-cup-2026-companion
-- **Version:** v1.8.0
+- **Version:** v1.8.1
 
 > Independent fan project. Not affiliated with, endorsed by, or connected to FIFA. No FIFA logos, mascots, or licensed assets are used.
 
@@ -21,6 +21,7 @@ This is a **completely vibe coded project**.
 ## Features
 
 - 🏠 Dashboard home: countdown, live/today/upcoming matches, quick filters, favorites, knockout preview, top stories, top scorers, watch-party teaser
+- 📡 Multi-match live coverage: when multiple matches are live simultaneously, a tab switcher lets you flip between all concurrent matches' scores and commentary in real time
 - 📅 Full fixtures page: search + filters (date scope, team, group, round, stadium, host country, status, favorites, importance), spoiler-free toggle
 - 🎫 Signature "stadium ticket" match cards with where-to-watch, notify-me, calendar and prediction actions
 - 🔍 Match details: timeline, live stats, team comparison, head-to-head, squads, lineups, sourced-data-only preview, highlights links, player of the match, fan reactions
@@ -205,7 +206,11 @@ vercel --prod
 
 ## Versioning & releases
 
-Semantic versioning. Current release: **v1.8.0** (git tag `v1.8.0`).
+Semantic versioning. Current release: **v1.8.1** (git tag `v1.8.1`).
+
+**v1.8.1** — Multi-match live commentary
+- Fixed **Live Match Coverage** on the home page only showing one match when multiple are live simultaneously. The `/api/live-commentary` endpoint was using `.find()` to pick a single match from ESPN's scoreboard, discarding all others
+- Now returns ALL live/recent/upcoming matches with commentary fetched in parallel. The `LiveCommentary` component adds a **match switcher tab bar** with team names, live scores, and red pulse indicators so users can switch between concurrent matches
 
 **v1.8.0** — Concurrent match switcher
 - Added a **concurrent match switcher** on the match detail page (`/matches/[id]`): when multiple matches share the same kickoff time (common on final group-stage matchdays and some knockout rounds), a horizontal pill strip appears between the hero and watch sections, letting users switch between simultaneous matches without navigating back to the fixtures list
